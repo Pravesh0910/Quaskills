@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <title>QuaSkills</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="index.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">  </script>
+
+  
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /*
+video {
+    max-width: 100%;
+  }
+  .card {
+    transition: transform 0.2s ease;
+    box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 1.5em;
+  }
+  .card:hover {
+    transform: scale(1.1);
+  } 
+
+  #mySidenav a {
+  position: absolute;
+  right: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 15px 0 0 15px;
+}
+
+#mySidenav a:hover {
+  right: 0;
+}
+
+#about {
+  top: 20px;
+  background-color: #04AA6D;
+}
+
+#blog {
+  top: 80px;
+  background-color: #2196F3;
+}
+
+#projects {
+  top: 140px;
+  background-color: #f44336;
+}
+
+#contact {
+  top: 200px;
+  background-color: #555
+} 
+
+
+.course_sec{
+  padding: 1em;
+}
+.course_card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+}
+.course_ctrl {
+  background-color: #e1e1e1;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (min-width: 768px) {
+  .course_item {
+    margin-right: 0;
+    flex: 0 0 33.333333%;
+    display: block;
+  }
+  .course_sec {
+    display: flex;
+  }
+}
+.course_card .img-wrapper {
+    max-width: 100%;
+    height: 13em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.course_card img {
+    max-height: 100%;
+}
+@media (max-width: 767px) {
+  .course_card .img-wrapper {
+    height: 17em;
+  }
+} 
+
+    .testimonals {
+      padding: 50px;
+      display: flex;
+      flex-flow: wrap;
+      font-family: "Ubuntu", sans-serif;
+    }
+
+    .card-container {
+      flex: 300px;
+      margin: 10px;
+    }
+
+    .card-container .card {
+      font-weight: bold;
+      position: relative;
+      width: 80%;
+    }
+
+    .card-container .card a {
+      padding: 20px;
+      width: 100%;
+      height: 350px;
+      border: 2px solid black;
+      background: white;
+      text-decoration: none;
+      color: black;
+      display: block;
+      transition: 0.25s ease;
+    }
+
+    .card-container .card a:hover {
+      transform: translate(-30px, -30px);
+      border-color: #5bc0eb;
+    }
+
+    .card-container .card a:hover .card--display {
+      display: none;
+    }
+
+    .card-container .card a:hover .card--hover {
+      display: block;
+    }
+
+    .card-container .card a .card--display i {
+      font-size: 20px;
+      margin-top: 200px;
+    }
+
+    .card-container .card a .card--display h2 {
+      margin: 20px 0 0;
+    }
+
+    .card-container .card a .card--hover {
+      display: none;
+    }
+
+    .card-container .card a .card--hover h2 {
+      margin: 20px 0;
+    }
+
+    .card-container .card a .card--hover p {
+      font-weight: normal;
+      line-height: 1.5;
+    }
+
+    .card-container .card a .card--hover p.link {
+      margin: 20px 0 0;
+      font-weight: bold;
+      color: #5bc0eb;
+    }
+
+    .card-container .card .card--border {
+      position: absolute;
+      width: 80%;
+      height: 80%;
+      left: 0;
+      top: 0;
+      border: 2px dashed black;
+      z-index: -1;
+    }
+
+    .card-container .card.card--dark a {
+      color: white;
+      background-color: black;
+      border-color: black;
+    }
+
+    .card-container .card.card--dark a .card--hover .link {
+      color: #fde74c;
+    } */
+
+    /* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EFEFEF;
+}
+.slide-container{
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+}
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.card{
+  border-radius: 25px;
+  background-color: #FFF;
+}
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #4070F4;
+  border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #4070F4;
+}
+.overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: #FFF;
+}
+.card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+}
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #4070F4;
+}
+.name{
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+.description{
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+.button{
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: #4070F4;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button:hover{
+  background: #265DF2;
+}
+
+.swiper-navBtn{
+  color: #6E93f7;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color: #4070F4;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 35px;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination-bullet{
+  background-color: #6E93f7;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: #4070F4;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+          <div class="slide-container swiper">
+              <div class="slide-content">
+                  <div class="card-wrapper swiper-wrapper">
+                      <div class="card swiper-slide">
+                          <div class="image-content">
+                              <span class="overlay"></span>
+  
+                              <div class="card-image">
+                                  <!--<img src="images/profile1.jpg" alt="" class="card-img">-->
+                              </div>
+                          </div>
+  
+                          <div class="card-content">
+                              <h2 class="name">David Dell</h2>
+                              <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+  
+                              <button class="button">View More</button>
+                          </div>
+                      </div>
+                      <div class="card swiper-slide">
+                          <div class="image-content">
+                              <span class="overlay"></span>
+  
+                              <div class="card-image">
+                                  <!--<img src="images/profile2.jpg" alt="" class="card-img">-->
+                              </div>
+                          </div>
+  
+                          <div class="card-content">
+                              <h2 class="name">David Dell</h2>
+                              <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+  
+                              <button class="button">View More</button>
+                          </div>
+                      </div>
+                      <div class="card swiper-slide">
+                          <div class="image-content">
+                              <span class="overlay"></span>
+  
+                              <div class="card-image">
+                                  <!--<img src="images/profile3.jpg" alt="" class="card-img">-->
+                              </div>
+                          </div>
+  
+                          <div class="card-content">
+                              <h2 class="name">David Dell</h2>
+                              <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+  
+                              <button class="button">View More</button>
+                          </div>
+                      </div>
+                      <div class="card swiper-slide">
+                          <div class="image-content">
+                              <span class="overlay"></span>
+  
+                              <div class="card-image">
+                                  <!--<img src="images/profile4.jpg" alt="" class="card-img">-->
+                              </div>
+                          </div>
+  
+                          <div class="card-content">
+                              <h2 class="name">David Dell</h2>
+                              <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+  
+                              <button class="button">View More</button>
+                          </div>
+                      </div>
+                      <div class="card swiper-slide">
+                          <div class="image-content">
+                              <span class="overlay"></span>
+  
+                              <div class="card-image">
+                                  <!--<img src="images/profile5.jpg" alt="" class="card-img">-->
+                              </div>
+                          </div>
+  
+                          <div class="card-content">
+                              <h2 class="name">David Dell</h2>
+                              <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+  
+                              <button class="button">View More</button>
+                          </div>
+                      </div>
+                      <div class="card swiper-slide">
+                          <div class="image-content">
+                              <span class="overlay"></span>
+  
+                              <div class="card-image">
+                                  <!--<img src="images/profile6.jpg" alt="" class="card-img">-->
+                              </div>
+                          </div>
+  
+                          <div class="card-content">
+                              <h2 class="name">David Dell</h2>
+                              <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+  
+                              <button class="button">View More</button>
+                          </div>
+                      </div>
+                      <div class="card swiper-slide">
+                          <div class="image-content">
+                              <span class="overlay"></span>
+  
+                              <div class="card-image">
+                                  <!--<img src="images/profile7.jpg" alt="" class="card-img">-->
+                              </div>
+                          </div>
+  
+                          <div class="card-content">
+                              <h2 class="name">David Dell</h2>
+                              <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+  
+                              <button class="button">View More</button>
+                          </div>
+                      </div>
+                      <div class="card swiper-slide">
+                          <div class="image-content">
+                              <span class="overlay"></span>
+  
+                              <div class="card-image">
+                                  <!--<img src="images/profile8.jpg" alt="" class="card-img">-->
+                              </div>
+                          </div>
+  
+                          <div class="card-content">
+                              <h2 class="name">David Dell</h2>
+                              <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+  
+                              <button class="button">View More</button>
+                          </div>
+                      </div>
+                      <div class="card swiper-slide">
+                          <div class="image-content">
+                              <span class="overlay"></span>
+  
+                              <div class="card-image">
+                                  <!--<img src="images/profile9.jpg" alt="" class="card-img">-->
+                              </div>
+                          </div>
+  
+                          <div class="card-content">
+                              <h2 class="name">David Dell</h2>
+                              <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+  
+                              <button class="button">View More</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="swiper-button-next swiper-navBtn"></div>
+              <div class="swiper-button-prev swiper-navBtn"></div>
+              <div class="swiper-pagination"></div>
+          </div>
+  
+      <!-- Swiper JS -->
+        <!--Uncomment this line-->
+      <script src="js/swiper-bundle.min.js"></script>
+  
+      <!-- JavaScript -->
+        <!--Uncomment this line-->
+      <script src="js/script.js"></script>
+
+      <script>
+         
+var swiper = new Swiper(".slide-content", {
+    slidesPerView: 3,
+    spaceBetween: 25,
+    loop: true,
+    centerSlide: 'true',
+    fade: 'true',
+    grabCursor: 'true',
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints:{
+        0: {
+            slidesPerView: 1,
+        },
+        520: {
+            slidesPerView: 2,
+        },
+        950: {
+            slidesPerView: 3,
+        },
+    },
+  });
+
+      </script>
+
+  
+
+
+<!--   
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="testimonals">
+          <div class="card-container">
+            <div class="card"><a href="hottub">
+                <div class="card--display"><i class="material-icons">hot_tub</i>
+                  <h2>Hot Tub Time Machine</h2>
+                </div>
+                <div class="card--hover">
+                  <h2>Hot Tub Time Machine</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at est orci. Nam molestie
+                    pellentesque mi nec lacinia. Cras volutpat arcu sit amet elit sodales, nec volutpat velit
+                    bibendum.</p>
+                  <p class="link">Click to see project</p>
+                </div>
+              </a>
+              <div class="card--border"></div>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card"><a href="worldweb">
+                <div class="card--display"><i class="material-icons">public</i>
+                  <h2>World Wide Web</h2>
+                </div>
+                <div class="card--hover">
+                  <h2>World Wide Web</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at est orci. Nam molestie
+                    pellentesque mi nec lacinia. Cras volutpat arcu sit amet elit sodales, nec volutpat velit
+                    bibendum.</p>
+                  <p class="link">Click to see project</p>
+                </div>
+              </a>
+              <div class="card--border"></div>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card"><a href="trainthings">
+                <div class="card--display"><i class="material-icons">train</i>
+                  <h2>Why I Hate Trains</h2>
+                </div>
+                <div class="card--hover">
+                  <h2>Why I Hate Trains</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at est orci. Nam molestie
+                    pellentesque mi nec lacinia. Cras volutpat arcu sit amet elit sodales, nec volutpat velit
+                    bibendum.</p>
+                  <p class="link">Click to see project</p>
+                </div>
+              </a>
+              <div class="card--border"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="testimonals">
+          <div class="card-container">
+            <div class="card"><a href="hottub">
+                <div class="card--display"><i class="material-icons">hot_tub</i>
+                  <h2>Hot Tub Time Machine</h2>
+                </div>
+                <div class="card--hover">
+                  <h2>Hot Tub Time Machine</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at est orci. Nam molestie
+                    pellentesque mi nec lacinia. Cras volutpat arcu sit amet elit sodales, nec volutpat velit
+                    bibendum.</p>
+                  <p class="link">Click to see project</p>
+                </div>
+              </a>
+              <div class="card--border"></div>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card"><a href="worldweb">
+                <div class="card--display"><i class="material-icons">public</i>
+                  <h2>World Wide Web</h2>
+                </div>
+                <div class="card--hover">
+                  <h2>World Wide Web</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at est orci. Nam molestie
+                    pellentesque mi nec lacinia. Cras volutpat arcu sit amet elit sodales, nec volutpat velit
+                    bibendum.</p>
+                  <p class="link">Click to see project</p>
+                </div>
+              </a>
+              <div class="card--border"></div>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card"><a href="trainthings">
+                <div class="card--display"><i class="material-icons">train</i>
+                  <h2>Why I Hate Trains</h2>
+                </div>
+                <div class="card--hover">
+                  <h2>Why I Hate Trains</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at est orci. Nam molestie
+                    pellentesque mi nec lacinia. Cras volutpat arcu sit amet elit sodales, nec volutpat velit
+                    bibendum.</p>
+                  <p class="link">Click to see project</p>
+                </div>
+              </a>
+              <div class="card--border"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="testimonals">
+          <div class="card-container">
+            <div class="card"><a href="hottub">
+                <div class="card--display"><i class="material-icons">hot_tub</i>
+                  <h2>Hot Tub Time Machine</h2>
+                </div>
+                <div class="card--hover">
+                  <h2>Hot Tub Time Machine</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at est orci. Nam molestie
+                    pellentesque mi nec lacinia. Cras volutpat arcu sit amet elit sodales, nec volutpat velit
+                    bibendum.</p>
+                  <p class="link">Click to see project</p>
+                </div>
+              </a>
+              <div class="card--border"></div>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card"><a href="worldweb">
+                <div class="card--display"><i class="material-icons">public</i>
+                  <h2>World Wide Web</h2>
+                </div>
+                <div class="card--hover">
+                  <h2>World Wide Web</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at est orci. Nam molestie
+                    pellentesque mi nec lacinia. Cras volutpat arcu sit amet elit sodales, nec volutpat velit
+                    bibendum.</p>
+                  <p class="link">Click to see project</p>
+                </div>
+              </a>
+              <div class="card--border"></div>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card"><a href="trainthings">
+                <div class="card--display"><i class="material-icons">train</i>
+                  <h2>Why I Hate Trains</h2>
+                </div>
+                <div class="card--hover">
+                  <h2>Why I Hate Trains</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at est orci. Nam molestie
+                    pellentesque mi nec lacinia. Cras volutpat arcu sit amet elit sodales, nec volutpat velit
+                    bibendum.</p>
+                  <p class="link">Click to see project</p>
+                </div>
+              </a>
+              <div class="card--border"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> -->
+
+  <!--
+
+  <div id="mySidenav" class="sidenav">
+    <a href="#" id="blog"> Enquiry </a>
+    <a href="#" id="projects">Projects</a>
+    <a href="#" id="contact">Contact</a>
+  </div>
+
+
+<div class="card" style="width: 18rem;">
+  <video controls="" src="https://codingyaar.com/wp-content/uploads/video-in-bootstrap-card.mp4"
+    class="bs-card-video"></video>
+  <div class="card-body">
+    <h5 class="card-title">Bootstrap video card  hover effect</h5>
+    <p class="card-text">
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content.
+    </p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div> 
+
+<div id="carouselExampleControlscourse" class="carousel" data-bs-ride="carousel">
+  <div class="carousel-inner course_sec">
+      <div class="carousel-item course_item active">
+          <div class="card course_card">
+              <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+              <div class="card-body">
+                  <h5 class="card-title">Card title 1</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+      </div>
+      <div class="carousel-item  course_item">
+          <div class="card course_card">
+              <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+              <div class="card-body">
+                  <h5 class="card-title">Card title 2</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+      </div>
+      <div class="carousel-item course_item">
+          <div class="card course_card">
+              <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+              <div class="card-body">
+                  <h5 class="card-title">Card title 3</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+      </div>
+      <div class="carousel-item course_item">
+          <div class="card course_card">
+              <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+              <div class="card-body">
+                  <h5 class="card-title">Card title 4</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+      </div>
+      <div class="carousel-item course_item">
+          <div class="card course_card">
+              <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+              <div class="card-body">
+                  <h5 class="card-title">Card title 5</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+      </div>
+      <div class="carousel-item course_item">
+          <div class="card course_card">
+              <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+              <div class="card-body">
+                  <h5 class="card-title">Card title 6</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+      </div>
+      <div class="carousel-item course_item">
+          <div class="card course_card">
+              <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+              <div class="card-body">
+                  <h5 class="card-title">Card title 7</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+      </div>
+      <div class="carousel-item course_item">
+          <div class="card course_card">
+              <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+              <div class="card-body">
+                  <h5 class="card-title">Card title 8</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+      </div>
+      <div class="carousel-item course_item">
+          <div class="card course_card">
+              <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+              <div class="card-body">
+                  <h5 class="card-title">Card title 9</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <button class="carousel-control-prev course_ctrl" type="button" data-bs-target="#carouselExampleControlscourse" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next course_ctrl" type="button" data-bs-target="#carouselExampleControlscourse" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<script>
+  var multipleCardCarousel = document.querySelector(
+  "#carouselExampleControlscourse"
+);
+if (window.matchMedia("(min-width: 768px)").matches) {
+  var carousel = new bootstrap.Carousel(multipleCardCarousel, {
+    interval: false,
+  });
+  var carouselWidth = $(".carousel-inner")[0].scrollWidth;
+  var cardWidth = $(".carousel-item").width();
+  var scrollPosition = 0;
+  $("#carouselExampleControlscourse .carousel-control-next").on("click", function () {
+    if (scrollPosition < carouselWidth - cardWidth * 4) {
+      scrollPosition += cardWidth;
+      $("#carouselExampleControlscourse .carousel-inner").animate(
+        { scrollLeft: scrollPosition },
+        600
+      );
+    }
+  });
+  $("#carouselExampleControlscourse .carousel-control-prev").on("click", function () {
+    if (scrollPosition > 0) {
+      scrollPosition -= cardWidth;
+      $("#carouselExampleControlscourse .carousel-inner").animate(
+        { scrollLeft: scrollPosition },
+        600
+      );
+    }
+  });
+} else {
+  $(multipleCardCarousel).addClass("slide");
+}
+</script> 
+
+<div class="container text-center my-3">
+  <h2 class="font-weight-light">Bootstrap Multi Slide Carousel</h2>
+  <div class="row mx-auto my-auto justify-content-center">
+      <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                  <div class="col-md-3">
+                      <div class="card">
+                          <div class="card-img">
+                              <img src="//via.placeholder.com/500x400/31f?text=1" class="img-fluid">
+                          </div>
+                          <div class="card-img-overlay">Slide 1</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="col-md-3">
+                      <div class="card">
+                          <div class="card-img">
+                              <img src="//via.placeholder.com/500x400/e66?text=2" class="img-fluid">
+                          </div>
+                          <div class="card-img-overlay">Slide 2</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="col-md-3">
+                      <div class="card">
+                          <div class="card-img">
+                              <img src="//via.placeholder.com/500x400/7d2?text=3" class="img-fluid">
+                          </div>
+                          <div class="card-img-overlay">Slide 3</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="col-md-3">
+                      <div class="card">
+                          <div class="card-img">
+                              <img src="//via.placeholder.com/500x400?text=4" class="img-fluid">
+                          </div>
+                          <div class="card-img-overlay">Slide 4</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="col-md-3">
+                      <div class="card">
+                          <div class="card-img">
+                              <img src="//via.placeholder.com/500x400/aba?text=5" class="img-fluid">
+                          </div>
+                          <div class="card-img-overlay">Slide 5</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="col-md-3">
+                      <div class="card">
+                          <div class="card-img">
+                              <img src="//via.placeholder.com/500x400/fc0?text=6" class="img-fluid">
+                          </div>
+                          <div class="card-img-overlay">Slide 6</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </a>
+          <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </a>
+      </div>
+  </div>
+  <h5 class="mt-2 fw-light">advances one slide at a time</h5>
+</div>  -->
+
+</body>
+
+</html>

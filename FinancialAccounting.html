@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
+  <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+  <script type='text/javascript'
+    src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+  <title>Financial Accounting</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="course.css">
+  <style>
+    .slide {
+    width: 250px;
+    clear: both;
+    height: 0px;
+    overflow: hidden;
+    transition: height .4s ease;
+}
+
+.touc:hover{
+    background: linear-gradient(-135deg, #881da8, #20668f);
+    color: whitesmoke;
+}
+#touch {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}
+#touch:checked+.slide {
+    height: 405px;
+}
+
+.slide1 {
+        width: 250px;
+    clear: both;
+    height: 0px;
+    overflow: hidden;
+    transition: height .4s ease;
+}
+
+#touch1 {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}
+
+#touch1:checked+.slide1 {
+    height: 90px;
+}
+
+.slide2 {
+    width: 250px;
+    clear: both;
+    height: 0px;
+    overflow: hidden;
+    transition: height .4s ease;
+}
+
+#touch2 {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}
+
+#touch2:checked+.slide2 {
+    height: 285px;
+}
+
+.slide3 {
+    width: 250px;
+    clear: both;
+    height: 0px;
+    overflow: hidden;
+    transition: height .4s ease;
+}
+
+#touch3 {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}
+
+#touch3:checked+.slide3 {
+    height: 235px;
+}
+
+.slide4 {
+        width: 250px;
+    clear: both;
+    height: 0px;
+    overflow: hidden;
+    transition: height .4s ease;
+}
+
+#touch4 {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}
+
+#touch4:checked+.slide4 {
+    height: 95px;
+}
+
+.slide5 {
+        width: 250px;
+    clear: both;
+    height: 0px;
+    overflow: hidden;
+    transition: height .4s ease;
+}
+
+#touch5 {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}
+
+#touch5:checked+.slide5 {
+    height: 140px;
+}
+
+.slide6 {
+        width: 250px;
+    clear: both;
+    height: 0px;
+    overflow: hidden;
+    transition: height .4s ease;
+}
+
+#touch6 {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}
+
+#touch6:checked+.slide6 {
+    height: 285px;
+}
+  </style>
+</head>
+
+<body>
+
+  <header class>
+
+    <div class="bg-primary header pt-2 d-flex ">
+            <form class="d-flex w-50 h-75 mx-auto">
+                <input class="form-control w-75" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+            <span class="ms-5 me-5">
+                <i class="fa fa-certificate" aria-hidden="true" class=""> ISO 9001:2015</i>
+            </span>
+    </div>
+</header>
+
+
+
+<nav class="navbar navbar-expand-lg bg-infos fs-5">
+  <div class="container-fluid ms-5">
+      <a class="navbar-brand" href="Index.html"> <img src="images/Logo Quaskills-01.png" class="mt-3" alt="" id="logoimg"> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav text-center">
+              <li class="nav-item ps-4">
+                  <a class="nav-link" href="About.html">About Us</a>
+              </li>
+              <li class="nav-item ps-4">
+                  <div class="dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          Courses
+                      </a>
+                      <ul class="dropdown-menu drop">
+                          <li><a class="dropdown-item" href="digitalmarketing.html">Digital Marketing Course</a></li>
+                          <li><a class="dropdown-item" href="DataAnalysis&Visualzation.html">Data Analysis & Visualzation Course</a></li>
+                          <li><a class="dropdown-item" href="Accounting.html">Accounting Course</a></li>
+                          <li><a class="dropdown-item" href="Accounting.html">Taxation Course</a></li>
+                          <li><a class="dropdown-item" href="GraphicDesigning.html">Graphic Designing Course</a></li>
+                          <li><a class="dropdown-item" href="WebGraphicDesigning.html">Web Graphic Designing Course</a></li>
+                          <li><a class="dropdown-item" href="MIS.html">MIS(Management Information) Course</a></li>
+                          <li><a class="dropdown-item" href="InformationTechnology.html">Information Technology Programme Course</a></li>
+                          <li><a class="dropdown-item" href="FinancialAccounting.html">Financial Accounting Course</a></li>
+                      </ul>
+                  </div>
+              </li>
+              <li class="nav-item ps-4">
+                  <div class="dropdown">
+                      <a class="nav-link dropdown-toggle" href="services.html" role="" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          Services
+                      </a>
+                      <ul class="dropdown-menu drop">
+                        <li><a class="dropdown-item" href="corporate_training.html">Corporate Training </a></li>
+                        <li><a class="dropdown-item" href="digitalmarketing_training.html">Digital Marketing
+                                Service
+                            </a></li>
+                        <li><a class="dropdown-item" href="placement.html">Placement </a></li>
+                        <li><a class="dropdown-item" href="seminar.html">College Seminar </a></li>
+                    </ul>
+                  </div>
+              </li>
+              <li class="nav-item ps-4">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item ps-4">
+                  <a class="nav-link"
+                      href="testimonals.html">Testimonals</a>
+              </li>
+              <li class="nav-item ps-4">
+                  <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item ps-4">
+                  <a class="nav-link"
+                      href="FAQ's.html">FAQ's</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+<div id="mySidenav" class="sidenav">
+  <a href="https://api.whatsapp.com/send?phone=987654321" id="about"><img src="images/whatsapp.png" alt=""
+          class="whatsapp"> 987654321</a>
+  <a href="https://api.whatsapp.com/send?tel=987654321" id="blog"><img src="images/phone-call.png" alt=""
+          class="call"> 89769 88791</a>
+  <a href="https://api.email.com/send?email=enquiry.thane@quaskills.com" id="projects"><img src="images/mail.png"
+          alt="" class="mail"> Enquire Now</a>
+</div>
+
+  <section id="section1">
+    <img src="images/financal accounting banners-09.jpg" class="fade-in-text" alt="" style="width: 100%;">
+  </section>
+
+  <h1 class="text-center mt-5">
+    Financial Accounting Course
+  </h1>
+
+  <section id="Contentinfo" class="mt-5 ">
+    <div class="d-flex flex-wrap justify-content-around">
+      <div class="reveal">
+        <p class=" fs-5 mt-3">Today’s business climate is fast-paced, dynamic and competitive. <br> Companies that want to thrive in this environment need <br> to make every process as efficient and streamlined as possible. <br> This is especially true when it comes to user workflow, <br> document management,   customer service and IT support <br> – processes that are often overlooked in smaller companies with <br> fewer resources but play an essential role in the success of any business.</p>
+      </div>
+      <div>
+        <img src="images/course1.jpg" alt="" class="offset-1">
+      </div>
+    </div>
+  </section>
+
+  <section id="section2" class="mt-5 ">
+    <div class="d-flex flex-wrap justify-content-around">
+      <div>
+        <img src="images/course1.jpg" alt="" class="offset-1 mt-5">
+      </div>
+      <div class="reveal">
+
+        <h2 class="text-center">MS Office</h2>
+        <p class=" fs-5">
+            Microsoft Office is a collection of programs made to increase  <br> productivity and perform typical operations on a computer. Much of the  <br> power that Office represents is born out of the integration of these  <br> applications: Microsoft Word, Excel, PowerPoint, Access, and Publisher  <br> all share files seamlessly. The suite also takes advantage of the newest  <br> technologies for mobile devices. This might be seen in documents created  <br> on your iPhone automatically syncing with your PC or Mac.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="section2" class="mt-5 ">
+    <div class="d-flex flex-wrap justify-content-around">
+      
+      <div class="reveal">
+        <h2 class="text-center">Advanced Excel</h2>
+        <p class=" fs-5">
+            Advanced Excel Functions refers to the features and functions of <br> Microsoft Excel, which helps the user to perform complex calculations, <br> perform data analysis, and much more. Technically speaking, the <br> Advanced functions in Microsoft Excel are specialized functions to <br> perform arithmetic operations on more than one cell value at a time and <br> work with one common output value. There are many advanced functions <br> in Microsoft Excel, which allow users to perform complex calculations, <br> perform data analysis, and much more. Some of these functions are <br> SUMIFS, INDEX MATCH, VLOOKUP, and HLOOKUP.
+        </p>
+      </div>
+      <div>
+        <video src="images/excel.mp4" autoplay loop width="400px"></video>
+      </div>
+    </div>
+  </section>
+
+  <section id="section2" class="mt-5 ">
+    <div class="d-flex flex-wrap justify-content-around">
+      <div>
+        <video src="images/mangement imformation system.mp4" autoplay loop width="400px"></video>
+      </div>
+      <div class="reveal">
+
+        <h2 class="text-center">MIS (Management Information System)</h2>
+        <p class=" fs-5">
+            Management Information Systems (MIS) are computer systems designed <br> to serve as the backbone of an organization’s operations. The MIS gathers <br> data from multiple online systems, analyzes it, and reports it to aid in <br> management decision-making. MIS has been used in a wide range of <br> industries including manufacturing and finance, both public and private <br> sector organizations. The management information system is the <br> backbone of any company. It helps in keeping track of all the important <br> data which is crucial for running a business efficiently. An MIS can be <br> defined as a computerized system that gathers, processes, and stores <br> information about an organization’s activities and operations.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="section2" class="mt-5 ">
+    <div class="d-flex flex-wrap justify-content-around">
+      <div class="reveal">
+        <h2 class="text-center">MS Access</h2>
+        <p class=" fs-5">
+            Microsoft Access is a software application that you can use to create, <br> modify, and manage database information. If you are working in an office <br> environment, it is possible to use this application in order to simplify your <br> database management. This database application offers excellent <br> functionality with the latest version of Access being designed not only for <br> home and small business users but also for large corporations.
+        </p>
+      </div>
+      <div>
+        <video src="images/ms access.mp4" autoplay loop width="400px"></video>
+      </div>
+    </div>
+  </section>
+
+  <section id="section2" class="mt-5 ">
+    <div class="d-flex flex-wrap justify-content-around">
+      <div>
+        <video src="images/vba excel macros.mp4" autoplay loop width="400px"></video>
+      </div>
+      <div class="reveal">
+
+        <h2 class="text-center">VBA Excel Macros</h2>
+        <p class=" fs-5">
+            VBA macros are a common alternative to the Visual Basic Editor and the <br> Visual Basic Project. They allow you to combine the power of VBA with <br> an object-oriented environment in Excel, QuickBooks, and Access. With <br> VBA, you can automate your work tasks and create custom user-generated <br> functions or macros that perform calculations or procedures on  your <br> data while you focus on more important tasks. VBA macros are <br> similar to Visual Basic for Applications, which is a programming <br> language used by Microsoft. It allows you to automate tasks in Excel, <br> Word, and other Microsoft applications. Macros are small programs that <br>  contain VBA code and perform specific tasks when you run them.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="section2" class="mt-5 ">
+    <div class="d-flex flex-wrap justify-content-around">
+      <div class="reveal">
+        <h2 class="text-center">Tableau</h2>
+        <p class=" fs-5">
+            Tableau is an empowering enterprise software company. The primary <br> product portfolio of Tableau is the Tableau Public workbook, which <br> allows users to publish and share their data visualizations. Tableau also <br> offers Tableau Desktop, a desktop application that allows users to create <br> powerful data visualizations right inside Microsoft Excel. Tableau Public <br> also allows you to upload your data and create interactive visualizations <br> online on the Tableau Public website so that you can reach a much larger <br> audience of people who can benefit from your expertise.
+        </p>
+      </div>
+      <div>
+        <img src="images/course1.jpg" alt="" class="offset-1 mt-5">
+      </div>
+    </div>
+  </section>
+
+  <div class="mt-5">
+    <h4>Tags</h4>
+  </div>
+
+  <div class="divider mt-3">
+  </div>
+
+  <section id="sect3" class="">
+    <h1 class="text-center mt-5">
+      Professional Financial Accounting Course Content
+    </h1>
+
+    <div class="d-flex justify-content-around flex-wrap">
+
+      <div>
+        <label for="touch"><i class="fa fa-angle-down mt-4 touc" style="font-size:24px; border: 2px solid black; background-color: #009bff;color: aliceblue;width: 260px; border-radius: 10px; padding: 8px 10px;"> Advanced Excel
+          </i></label>
+        <input type="checkbox" id="touch" >
+
+        <ul class="slide">
+          <li>Advanced file tasks</li>
+          <li>Working with functions and formulas</li>
+          <li>Managing tables in Microsoft excel</li>
+          <li>Data tools in excel</li>
+          <li>Sparkline</li>
+          <li>Grouping & outlining and subtotals</li>
+          <li>What-analysis</li>
+          <li>Advanced pivot tables & charts</li>
+          <li>Advanced excel tasks</li>
+          <li>Creating HLOOKUP and VLOOKUP functions</li>
+          <li>Advanced conditional formatting</li>
+          <li>Advanced lookup functions</li>
+          <li>Advanced functions in excel</li>
+        </ul>
+      </div>
+
+      <div>
+        <label for="touch1"><i class="fa fa-angle-down mt-4 touc" style="font-size:24px; border: 2px solid black; background-color: #009bff;color: aliceblue; width: 260px; border-radius: 10px; padding: 8px 10px;"> MS Offices        </i></label>
+        <input type="checkbox" id="touch1">
+        <ul class="slide1">
+          <li>MS-Word</li>
+          <li>MS-PowerPoint</li>
+          <li>MS-Excel</li>
+          <li>MS-outlook</li>
+        </ul>
+      </div>
+
+      <div>
+        <label for="touch2"><i class="fa fa-angle-down mt-4 touc" style="font-size:24px; border: 2px solid black; background-color: #009bff;color: aliceblue; width: 260px; border-radius: 10px; padding: 8px 10px;"> Tableau</i></label>
+        <input type="checkbox" id="touch2">
+        <ul class="slide2" >
+          <li>Introduction To Tableau</li>
+          <li>Tableau Interface</li>
+          <li>Chart Types </li>
+          <li> Data Visualization</li>
+          <li>Run Time Columns</li>
+          <li>Data Formatting </li>
+          <li> Advanced Function</li>
+          <li>Filters </li>
+          <li> Advanced Charts</li>
+          <li>Dashboards</li>
+          <li>Storyline In Tableau</li>
+          <li>Publish Reports</li>
+        </ul>
+      </div>
+
+      <div>
+        <label for="touch3"><i class="fa fa-angle-down mt-4 touc" style="font-size:24px; border: 2px solid black; background-color: #009bff;color: aliceblue; width: 260px; border-radius: 10px; padding: 8px 10px;"> VBA - Excel Macros </i></label>
+        <input type="checkbox" id="touch3">
+        <ul class="slide3">
+          <li>Macro Recording</li>
+          <li>Visual Basic Editor</li>
+          <li>Understanding Objects, Methods, Properties & Variables</li>
+          <li>Control Structures-Decision</li>
+          <li>Looping Structures</li>
+          <li>User Forms And GUI</li>
+          <li>Worksheet / Workbook Operations</li>
+          <li>Error Handling</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-around flex-wrap">
+
+      <div>
+        <label for="touch4"><i class="fa fa-angle-down mt-4 touc" style="font-size:24px; border: 2px solid black; background-color: #009bff;color: aliceblue; width: 260px; border-radius: 10px; padding: 8px 10px;"> Fundamentals Of OS
+        </i></label>
+        <input type="checkbox" id="touch4">
+        <ul class="slide4">
+          <li>Computer Compentency</li>
+          <li>System Software</li>
+          <li>Window OS</li>
+          <li>Applications Software</li>
+        </ul>
+      </div>
+
+      <div>
+        <label for="touch5"><i class="fa fa-angle-down mt-4 touc" style="font-size:24px; border: 2px solid black;background-color: #009bff;color: aliceblue; width: 260px; border-radius: 10px; padding: 8px 10px;"> Ms-Access</i></label>
+        <input type="checkbox" id="touch5">
+
+        <ul class="slide5">
+          <li>Gettig Started With Access</li>
+          <li>Working with Table Data</li>
+          <li>Quering a Database</li>
+          <li>Generating Reports </li>
+          <li>Designing a Relational Database</li>
+          <li> Sharing Data Across Applications</li>
+        </ul>
+      </div>
+
+      <div>
+        <label for="touch6"><i class="fa fa-angle-down mt-4 touc" style="font-size:24px; border: 2px solid black; border-radius: 10px; width: 260px; padding: 8px 10px; background-color: #009bff;color: aliceblue;"> MIS</i></label>
+        <input type="checkbox" id="touch6">
+
+        <ul class="slide6">
+          <li>Creating Dashboards</li>
+          <li>Graphic Representation of data using charts & Sparkline </li>
+          <li>Use of pivot for data analysis </li>
+          <li>Use of power queries</li>
+          <li> Exporting data from excel to other formats </li>
+          <li> Creating Reports in excel</li>
+          <li>  Conditional formatting for Dashboards</li>
+          <li>  Pivot tables dashboard with Slicers</li>
+        </ul>
+      </div>
+
+  </section>
+
+  <section class="container mt-4">
+    <h1 class="text-center mb-3">
+      FAQ's
+    </h1>
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                what is Financial accounting?
+            </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Financial accounting is the process of recording, summarizing, and reporting information on all financial transactions regarding a business or organization's activities.
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                VBA - Excel Macros?
+            </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              VBA macros are a common alternative to the Visual Basic Editor and the Visual Basic Project. They allow you to combine the power of VBA with an object-oriented environment in Excel, QuickBooks, and Access.
+
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Tableau?
+            </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Tableau is an empowering enterprise software company. The primary product portfolio of Tableau is the Tableau Public workbook, which allows users to publish and share their data visualizations.
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                MS-Access?
+            </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Microsoft Access is a software application that you can use to create, modify, and manage database information.       </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Adv. Excel?
+            </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Advanced Excel Functions refers to the features and functions of Microsoft Excel, which helps the user to perform complex calculations, perform data analysis, and much more.       
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+  <!--Footer-->
+  <footer class="container-fluid" style="font-size: 1rem;">
+    <div class="footer d-flex flex-wrap pt-1">
+        <div class="ms-1">
+            <p>
+                <strong class="fs-3" style="font-weight: bolder;"> Quaskills </strong> conducts unique and <br>
+                professional training for graduates and <br>
+                post graduates, we are specialized in real <br>
+                time industry training with the added <br>
+                advantage of domain knowledge. We <br>
+                believe in well organized, Systematizedand <br>
+                Standardized training.
+            </p>
+
+            <div class="text-center d-flex">
+                <a href=""> <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Facebook">
+                        <i class="fa fa-facebook-official Socials" style="font-size:30px"></i>
+                    </button> </a> <br>
+                <a href=""> <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Instagram">
+                        <i class="fa fa-instagram Socialsinst" style="font-size:30px"></i>
+                    </button> </a> <br>
+                <a href=""> <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        title="Linkedin">
+                        <i class="fa fa-youtube-play Socials" style="font-size:30px"></i>
+                    </button> </a> <br>
+                <a href=""> <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Twitter">
+                        <i class="fa fa-twitter-square Socials" style="font-size:30px"></i>
+                    </button> </a>
+            </div>
+        </div>
+
+        <div class="me-3 ms-2 mt-2">
+            <h3>Courses</h3>
+            <a class="dropdown-item" href="digitalmarketing.html">Digital Marketing Course</a>
+            
+            <a class="dropdown-item" href="DataAnalysis&Visualzation.html">Data Analysis &
+                    Visualzation Course</a>
+            <a class="dropdown-item" href="Accounting.html">Accounting Course</a>
+            <a class="dropdown-item" href="taxation.html">Taxation Course</a>
+            <a class="dropdown-item" href="GraphicDesigning.html">Graphic Designing Course</a>
+            
+            <a class="dropdown-item" href="WebGraphicDesigning.html">Web Graphic Designing
+                    Course</a>
+            <a class="dropdown-item" href="MIS.html">MIS(Management Information) Course</a></li>
+            <a class="dropdown-item" href="InformationTechnology.html">Information Technology
+                    Programme Course</a>
+            <a class="dropdown-item" href="FinancialAccounting.html">Financial Accounting
+                    Course</a>
+        </div>
+
+        <div class="me-2s  mt-2">
+            <h3>Services</h3>
+            <a href="corporate_training.html">Co-orporate Training</a> <br>
+            <a href="digitalmarketing_training.html">Digital Marketing Service</a> <br>
+            <a href="placement.html">Placement </a> <br>
+            <a href="seminar.html">College Seminar </a>
+        </div>
+
+        <div class="me-3 ms-2  mt-2">
+            <h3>
+                Contact Us
+            </h3>
+            <p>201, Anant Laxmi Chambers, <br>
+                Dada Patil Marg, opp. <br>
+                Waman Hari Pethe Jewellers, <br>
+                Thane, Maharashtra 400602</p>
+            <span>
+                <a href="">
+                    <img src="mail.png" class="mail" alt=""> enquiry.thane@quaskills.com </a>
+            </span> <br> <br>
+            <span>
+                <a href="#">
+                    <img src="call.png" class="call" alt="">
+                    Tel: +91 89769 88791 </a>
+            </span>
+        </div>
+        <div class="map-responsive mt-2 ms-2">
+            <p>
+              <iframe class="rounded-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.1812067702053!2d72.97059941394056!3d19.187286187024142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b9d0d65fd0f7%3A0xc05e9433a2616e8a!2sQUASTECH%20-%20Software%20Testing%20Course%2C%20Python%20Development%2C%20Java%20Development%20course%2C%20python%20data%20science%2C%20digital%20marketing!5e0!3m2!1sen!2sin!4v1674018424695!5m2!1sen!2sin" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </p>
+        </div>
+    </div>
+    <p class=" mx-auto text-center d-block pb-3"> © 2018 QUASKILLS. All rights reserved </p>
+</footer>
+
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/63809f12b0d6371309d10e80/1gin6qop9';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+
+
+  <script>
+		function reveal() {
+			var reveals = document.querySelectorAll(".reveal");
+
+			for (var i = 0; i < reveals.length; i++) {
+				var windowHeight = window.innerHeight;
+				var elementTop = reveals[i].getBoundingClientRect().top;
+				var elementVisible = 150;
+
+				if (elementTop < windowHeight - elementVisible) {
+					reveals[i].classList.add("active");
+				} else {
+					reveals[i].classList.remove("active");
+				}
+			}
+		}
+
+		window.addEventListener("scroll", reveal);
+	</script>
+
+</body>
+
+</html>
