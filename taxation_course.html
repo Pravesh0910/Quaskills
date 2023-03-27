@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
+  <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+  <script type='text/javascript'
+    src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+  <title>Taxation</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="course.css">
+  <style>
+    .slide {
+      width: 250px;
+      clear: both;
+      height: 0px;
+      overflow: hidden;
+      transition: height .4s ease;
+    }
+
+    .touc:hover {
+      background: linear-gradient(-135deg, #881da8, #20668f);
+      color: whitesmoke;
+    }
+
+    #touch {
+      position: absolute;
+      opacity: 0;
+      height: 0px;
+    }
+
+    #touch:checked+.slide {
+      height: 405px;
+    }
+
+    .slide1 {
+      width: 250px;
+      clear: both;
+      height: 0px;
+      overflow: hidden;
+      transition: height .4s ease;
+    }
+
+    #touch1 {
+      position: absolute;
+      opacity: 0;
+      height: 0px;
+    }
+
+    #touch1:checked+.slide1 {
+      height: 305px;
+    }
+
+    .slide2 {
+      width: 250px;
+      clear: both;
+      height: 0px;
+      overflow: hidden;
+      transition: height .4s ease;
+    }
+
+    #touch2 {
+      position: absolute;
+      opacity: 0;
+      height: 0px;
+    }
+
+    #touch2:checked+.slide2 {
+      height: 213px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="" style="width: 100%;">
+    <div class="header pt-2 d-flex flex-wrap justify-content-around align-items-center ">
+        <div class="d-flex flex-wrap justify-content-around w-50">
+            <a href="wtai://wp/mc;8976988791" class="fw-bold text-light"><img src="images/call.png" alt=""
+                    style="width: 24px;"> 89769 88791</a>
+            <a href='mailto: enquiry.thane@quaskills.com?.com' class=" ms-3fw-bold text-light"><img
+                    src="images/mail.png" alt="" style="width: 24px;">
+                Enquire Now</a>
+            <span class="">
+                <i class="fa fa-certificate" aria-hidden="true" class="me-5"> ISO 9001:2015</i>
+            </span>
+        </div>
+        <form class="d-flex pb-2 ">
+            <input class="form-control searchbar" type="search" placeholder="Search" aria-label="Search"
+                id="name" list="browsers">
+            <datalist id="browsers">
+                <option value="About Us" />
+                <option value="Contact" />
+                <option value="Blog" />
+                <option value="Testimonals" />
+                <option value="digital Marketing course" />
+                <option value="DataAnalysis&VisualizationCourse" />
+                <option value="Accounting Course" />
+                <option value="Taxation Course" />
+                <option value="Graphic Designing course" />
+                <option value="Web Graphic Designing course" />
+                <option value="MIS course" />
+                <option value="Information Technology course" />
+                <option value="Financial Accounting course" />
+                <option value="corporate_training" />
+                <option value="digitalmarketing_service" />
+            </datalist>
+            <button class="btn btn-outline-light " type="submit" id="name" list="browsers">Search</button>
+        </form>
+    </div>
+</header>
+
+
+<nav class="navbar navbar-expand-lg bg-infos fs-5 secondary" id="navbar_top"
+        style="background-color: rgb(245, 245, 245); color: black; font-weight: bolder;">
+        <div class="container-fluid navigate">
+            <a class="navbar-brand" href="index.html"> <img src="images/Final Logo Quaskills.png" class="" alt=""
+                    id="logoimg"> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav text-center" id="myUL">
+                    <li class="nav-item ps-4">
+                        <a class="nav-link" href="About.html">About Us</a>
+                    </li>
+                    <li class="nav-item ps-4 honav">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Courses
+                            </a>
+                            <ul class="drop dropdown-menu effect">
+                                <li class="dropdown dropend"> <div class=" dropdown bg-primary " >
+                                    <a class="ps-3 nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="" style="color: aliceblue;" target="_blank">IT Courses</a>
+                                    <ul class="dropdown-menu visible" >
+                                        <li><a class="dropdown-item" href="https://www.quastech.in/software-testing-training.html" target="_blank">Software Testing</a></li>
+                                        <li><a class="dropdown-item" href="https://www.quastech.in/full-stack-java-Development.html" target="_blank">Full Stack Java development</a></li>
+                                        <li><a class="dropdown-item" href="https://www.quastech.in/full-stack-Python-Development.html" target="_blank">Full stack Python development</a></li>
+                                        <li><a class="dropdown-item" href="https://www.quastech.in/python-data-science.html" target="_blank">Python Data Science</a></li>
+                                        <li><a class="dropdown-item" href="https://www.quastech.in/java-training.html" target="_blank">Java development</a></li>
+                                        <li><a class="dropdown-item" href="https://www.quastech.in/python-training.html" target="_blank">Python development</a></li>
+                                        <li><a class="dropdown-item" href="https://www.quastech.in/web-designing-training.html" target="_blank">Web Designing</a></li>
+                                    </ul>
+                                </div> </li>
+                                <li><a class="dropdown-item" href="digital_marketing_course.html">Digital Marketing
+                                        Course</a>
+                                </li>
+                                <li><a class="dropdown-item" href="data_analysis&visualzation_course.html">Data Analysis &
+                                        Visualzation Course</a></li>
+                                <li><a class="dropdown-item" href="accounting_course.html">Accounting Course</a></li>
+                                <li><a class="dropdown-item" href="taxation_course.html">Taxation Course</a></li>
+                                <li><a class="dropdown-item" href="graphic_designing_course.html">Graphic Designing
+                                        Course</a>
+                                </li>
+                                <li><a class="dropdown-item" href="web_graphic_designing_course.html">Web Graphic Designing
+                                        Course</a></li>
+                                <li><a class="dropdown-item" href="management_information_system_course.html">Management Information System(MIS)
+                                        Course</a></li>
+                                <li><a class="dropdown-item" href="information_technology_course.html">Information
+                                        Technology
+                                        Programme Course</a></li>
+                                <li><a class="dropdown-item" href="financial_accounting_course.html">Financial Accounting
+                                        Course</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item ps-4 honav">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="drop dropdown-menu effect">
+                                <li><a class="dropdown-item" href="corporate_training.html">Corporate Training </a></li>
+                                <li><a class="dropdown-item" href="digital_marketing_service.html">Digital Marketing
+                                        Service
+                                    </a></li>
+                                <li><a class="dropdown-item" href="placement.html">Placement </a></li>
+                                <li><a class="dropdown-item" href="seminar.html">College Seminar </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item ps-4">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item ps-4">
+                        <a class="nav-link" href="testimonals.html">Testimonals</a>
+                    </li>
+                    <li class="nav-item ps-4">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item ps-4">
+                        <a class="nav-link" href="FAQ's.html">FAQ's</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<div id="mySidenav" class="sidenav">
+  <a href="https://api.whatsapp.com/send?phone=8976988791" id="about"><img src="images/whatsapp.png" alt=""
+          class="whatsapp"> 89769 88791</a>
+  <a href="wtai://wp/mc;8976988791" id="blog"><img src="images/call.png" alt="" class="call me-1"> 89769
+      88791</a>
+  <a href='mailto: enquiry.thane@quaskills.com?.com' id="projects"><img src="images/mail.png" alt="" class="mail">
+      Enquire Now</a>
+</div>
+
+  <section id="section1">
+    <img src="images/Taxation banners-03.jpg" class="fade-in-text" alt="" style="width: 100%;">
+  </section>
+
+  <h1 class="text-center mt-5">
+    <span class="" > Taxation </span>
+  </h1>
+
+  <section id="Contentinfo" class="mt-5 " oncontextmenu="return false">
+    <div class="d-flex justify-content-around flex-wrap align-items-center">
+      <div class="reveal">
+        <p class="mt-3 text-start" style="font-size: 20px;"> If you’re a tax professional or an accounting major who plans to
+          work as a tax accountant after graduation, you probably already know that taxes are a cornerstone of
+          your career. However, if you’re like most people, taxes might not be your favorite subject. </p>
+      </div>
+      <div>
+        <video src="Course/taxation 1.mp4" autoplay loop width="350px"></video>
+      </div>
+    </div>
+  </section>
+
+  <section id="section2" class="mt-5 " oncontextmenu="return false">
+    <div class="d-flex justify-content-around flex-wrap align-items-center">
+      <div>
+        <video src="Course/Taxation.mp4" autoplay loop width="350px"></video>
+      </div>
+      <div class="reveal">
+
+        <h3 class="text-center">Tax</h3>
+        <p class=" fs-5 text-start">
+          Tax can be confusing because there are lots of different rules and regulations that make it even harder
+          to understand. If you’re just starting out on your tax career path, this guide will help you get
+          started by breaking down the basics of tax laws. This guide will help you learn about the different types
+          of taxes that exist, how they work and when they might apply to you. You’ll also learn what the IRS
+          is and how it works with other agencies to enforce tax laws.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="section2" class="mt-5 " oncontextmenu="return false">
+    <div class="d-flex justify-content-around flex-wrap align-items-center">
+
+      <div class="reveal">
+        <h3 class="text-center">TDS (Tax Deduction at Source)</h3>
+        <p class=" fs-5 text-start">
+          TDS is the concept of tax deduction at source. It was introduced in order to collect tax from the very
+          source of income for which it is levied. As per this concept, a person (deductor) who is liable to
+          make a payment of specified nature to any other person (deducted) shall deduct tax at source and remit
+          the same into the account of the Central Government.
+        </p>
+      </div>
+      <div>
+        <video src="Course/tds.mp4" autoplay loop width="350px"></video>
+      </div>
+    </div>
+  </section>
+
+  <section id="section2" class="mt-5 " oncontextmenu="return false">
+    <div class="d-flex justify-content-around flex-wrap align-items-center">
+      <div>
+        <video src="Course/tcs.mp4" autoplay loop width="350px"></video>
+      </div>
+      <div class="reveal">
+
+        <h3 class="text-center">TCS (Tax Collected at Source) </h3>
+        <p class=" fs-5 text-start">
+          TCS is a system used by vendors who do business with the government. TCS provides an additional source of
+          tax revenue for the Government, making it easier for the government to collect taxes from all
+          accounts, regardless of their location, who are not eligible for CPT s.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="section2" class="mt-5 " oncontextmenu="return false">
+    <div class="d-flex justify-content-around flex-wrap align-items-center">
+      <div class="reveal">
+        <h3 class="text-center">Service Tax </h3>
+        <p class=" fs-5 text-start">
+          A tax that the government imposes on service suppliers on certain service transactions is known as a
+          service tax. It is actually borne by the customer, who also pays it when he or she uses a service.
+          Service tax forms part of the indirect tax regime and is collected in accordance with prescribed rates to
+          finance various government operations including defense, healthcare, transport, and infrastructure <br>
+          development.
+        </p>
+      </div>
+      <div>
+        <video src="Course/serivce tax.mp4" autoplay loop width="350px"></video>
+      </div>
+    </div>
+  </section>
+
+  <section id="section2" class="mt-5 " oncontextmenu="return false">
+    <div class="d-flex justify-content-around flex-wrap align-items-center">
+      <div>
+        <video src="Course/gst.mp4" autoplay loop width="350px"></video>
+      </div>
+      <div class="reveal">
+        <h3 class="text-center">GST (Goods and Service Tax) </h3>
+        <p class=" fs-5 text-start">
+          GST is an indirect tax, which can also be referred to as a national sales tax. The Goods and Services Tax
+          (GST) regime has been enacted in India to replace the taxes currently charged on the sale or purchase of
+          goods or services by way of Value Added Tax (VAT), Sales Tax, and Service Tax. A single tax on the
+          provision of goods and services is known as the GST. It subsumes all indirect taxes, including central
+          excise duty, countervailing duties, service tax, and state-level value- added tax/sales tax.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="section2" class="mt-5 " oncontextmenu="return false">
+    <div class="d-flex justify-content-around flex-wrap align-items-center">
+      <div class="reveal">
+        <h3 class="text-center">GST Return File</h3>
+        <p class=" fs-5 text-start">
+          A GST return is a document that will contain all the details of your sales, purchases, and GST collected
+          by you. It is a document that you need to file with the government in order to pay your tax
+          liability. Filing a GST return means that you are following the GST laws and regulations as put forth by
+          the government. This is a document that you will have to file every month and it should be done
+          within the specified time frame. The government has set a deadline for each state by which the GST return
+          must be filed by.
+        </p>
+      </div>
+      <div>
+        <video src="Course/gst return.mp4" autoplay loop width="350px"></video>
+      </div>
+    </div>
+  </section>
+
+  <section id="section2" class="mt-5 " oncontextmenu="return false">
+    <div class="d-flex justify-content-around flex-wrap align-items-center">
+      <div>
+        <video src="Course/Utilities.mp4" autoplay loop width="350px"></video>
+      </div>
+      <div class="reveal">
+        <h3 class="text-center">Utilities</h3>
+        <p class=" fs-5 text-start">
+          The import utility will help taxpayers import pre-filled data and edit it before filing ITR. The Income
+          Tax Department has decided to do away with the Excel data sheets, and it has introduced a new idea of
+          import utility that will allow importing data into ITR. In the past, a user would have to calculate
+          the ITR manually, or else file tax manually as it would take quite some time. This new direction of
+          thinking is a step in the right direction as it will make things simpler.
+          GSTR-1, GSTR-2, GSTR-3, and GSTR-4 are all filed by Registered Indian Taxpayers for outward supplies of
+          goods or services. GSTR-5 and GSTR-6 are filed by non-resident foreign taxpayers and details of inward
+          supplies of goods and services made to non-taxable persons located in India etc. Filing for each
+          form is simple, fast, and secure.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="section2" class="mt-5 " oncontextmenu="return false">
+    <div class="d-flex justify-content-around flex-wrap align-items-center">
+      <div class="reveal">
+        <h3 class="text-center">Reports</h3>
+        <p class=" fs-5 text-start">
+          A tax summary report provides an overview of all taxes that your business has paid on invoices and paid
+          on costs. You will be able to view the total value of taxes paid/collected during a period of time.
+          The tax summary shows the total amount for each tax type, what percentage of each tax was paid and how
+          much was calculated as the difference between expenses and receipts across dates.
+        </p>
+      </div>
+      <div>
+        <video src="Course/reports.mp4" autoplay loop width="350px"></video>
+      </div>
+    </div>
+  </section>
+
+  <section id="section2" class="mt-5 " oncontextmenu="return false">
+    <div class="d-flex justify-content-around flex-wrap align-items-center">
+      <div>
+        <video src="Course/Display and Printing.mp4" autoplay loop width="350px"></video>
+      </div>
+      <div class="reveal">
+        <h3 class="text-center">Display and Printing </h3>
+        <p class=" fs-5 text-start">
+          The Create Tax Statements from your transaction or credit card account screen allows users to easily
+          create tax statements for their business. Customers can do this by selecting the "to make a statement"
+          option and entering information about their business. Once completed, the customer can preview their
+          statement before it is printed."
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="mt-5 container">
+    <h4><b> Tags: </b> Taxation, TDS,TCS, Service TAX, GST, GST Return files, GST Forms,Utilities
+    </h4>
+  </div>
+  <div class="divider mt-3 border border-bottom border-dark">
+  </div>
+
+
+
+  <section id="sect3" class="">
+    <h2 class="text-center mt-5">
+      Taxation Course Content
+    </h2>
+
+    <div class="d-flex justify-content-around flex-wrap">
+
+      <div>
+        <label for="touch"><i class="fa fa-angle-down mt-4 touc"
+            style="font-size:24px; border: 2px solid black; background-color: #009bff;color: aliceblue;width: 260px; border-radius: 10px; padding: 8px 10px;">
+            Module 1
+          </i></label>
+        <input type="checkbox" id="touch">
+
+        <ol class="slide">
+          <b>
+            <li>TAX</li>
+          </b>
+          <ul type="disc">
+            <li>General Terminology</li>
+            <li>Percentages</li>
+            <li>Computation of VAT</li>
+            <li>TAX Information</li>
+            <li>VAT forms</li>
+          </ul>
+          <b>
+            <li>TDS(Tax Deducted at Source)</li>
+          </b>
+          <ul type="disc">
+            <li>e-TDS</li>
+            <li>TDS Computation</li>
+            <li>Reports</li>
+            <li>TDS form</li>
+          </ul>
+          <b>
+            <li>TCS(Tax Collected at Source)</li>
+          </b>
+          <ul type="disc">
+            <li>e-TCS</li>
+            <li>Statutory Information</li>
+            <li>TCS Computation</li>
+            <li>Reports</li>
+            <li>TCS form</li>
+          </ul>
+        </ol>
+      </div>
+
+      <div>
+        <label for="touch1"><i class="fa fa-angle-down mt-4   touc"
+            style="font-size:24px; border: 2px solid black; background-color: #009bff;color: aliceblue; width: 260px; border-radius: 10px; padding: 8px 10px;">
+            Module2</i></label>
+        <input type="checkbox" id="touch1">
+        <ol class="slide1">
+          <b>
+            <li>Module 2</li>
+          </b>
+          <ul type="disc">
+            <li>Service Tax Computation</li>
+            <li>Report</li>
+          </ul>
+          <b>
+            <li>GST(Goods and Service Tax)</li>
+          </b>
+          <ul type="disc">
+            <li>Introduction</li>
+            <li>Benefits</li>
+            <li>Features</li>
+          </ul>
+          <b>
+            <li>GST in India</li>
+          </b>
+          <ul type="disc">
+            <li>Taxable Persons</li>
+            <li>Tax Rate</li>
+          </ul>
+          <b>
+            <li>GST forms</li>
+          </b>
+          <ul type="disc">
+            <li>Various Types</li>
+          </ul>
+          <b>
+            <li>GST Return File</li>
+          </b>
+        </ol>
+      </div>
+
+      <div>
+        <label for="touch2"><i class="fa fa-angle-down mt-4 touc"
+            style="font-size:24px; border: 2px solid black; background-color: #009bff;color: aliceblue; width: 260px; border-radius: 10px; padding: 8px 10px;">
+            Module 3</i></label>
+        <input type="checkbox" id="touch2">
+        <ol class="slide2">
+          <b>
+            <li>Utilities</li>
+          </b>
+          <ul type="disc">
+            <li>Import Data</li>
+            <li>Banking</li>
+          </ul>
+          <b>
+            <li>Reports</li>
+          </b>
+          <ul type="disc">
+            <li>Balance Sheet</li>
+            <li>Profit & Loss Amount</li>
+            <li>Stock Summary</li>
+            <li>Ratio Analysis</li>
+          </ul>
+          <b>
+            <li>Display & Printing</li>
+          </b>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mt-4">
+    <h2 class="text-center mb-3">
+      FAQ's
+    </h2>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            What is TDS? (Tax Deduction at Source)
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            TDS is the concept of tax deduction at source. It was introduced in order to collect tax from the very
+            source of income for which it is levied.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            What is GST (Goods and Service Tax)?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            GST is an indirect tax, which can also be referred to as a national sales tax. The Goods and Services Tax
+            (GST) regime has been enacted in India to replace the taxes currently charged on the sale or purchase of
+            goods or services.
+
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Importance of Utilities?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            The import utility will help taxpayers import pre-filled data and edit it before filing ITR. The Income Tax
+            Department has decided to do away with the Excel data sheets, and it has introduced a new idea of import
+            utility that will allow importing data into ITR.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Service Tax?
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            A tax that the government imposes on service suppliers on certain service transactions is known as a service
+            tax. It is actually borne by the customer, who also pays it when he or she uses a service
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            GST Return File?
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            A GST return is a document that will contain all the details of your sales, purchases, and GST collected by
+            you. It is a document that you need to file with the government in order to pay your tax liability.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!--Footer-->
+    <footer class="container-fluid" style="font-size: 1rem;">
+      <div class="footer pt-1">
+
+          <div class="map-responsive mt-2">
+                  <iframe class="rounded-5"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.1812067702053!2d72.97059941394056!3d19.187286187024142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b9d0d65fd0f7%3A0xc05e9433a2616e8a!2sQUASTECH%20-%20Software%20Testing%20Course%2C%20Python%20Development%2C%20Java%20Development%20course%2C%20python%20data%20science%2C%20digital%20marketing!5e0!3m2!1sen!2sin!4v1674018424695!5m2!1sen!2sin"
+                      width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div> 
+
+          <div class="mt-2">
+              <h3> <b> Courses </b> </h3>
+              <a class="dropdown-item" href="digital_marketing_course.html">Digital Marketing Course</a>
+
+              <a class="dropdown-item" href="data_analysis&visualzation_course.html">Data Analysis &
+                  Visualzation Course</a>
+              <a class="dropdown-item" href="accounting_course.html">Accounting Course</a>
+              <a class="dropdown-item" href="taxation_course.html">Taxation Course</a>
+              <a class="dropdown-item" href="graphic_designing_course.html">Graphic Designing Course</a>
+
+              <a class="dropdown-item" href="web_graphic_designing_course.html">Web Graphic Designing
+                  Course</a>
+              <a class="dropdown-item" href="management_information_system_course.html">MIS(Management Information) Course</a></li>
+              <a class="dropdown-item" href="information_technology_course.html">Information Technology
+                  Programme Course</a>
+              <a class="dropdown-item" href="financial_accounting_course.html">Financial Accounting
+                  Course</a>
+          </div>
+
+          <div class="mt-2">
+              <h3>
+                <b>  Contact Us </b>
+              </h3>
+              <p >201, Anant Laxmi Chambers, <br>
+                  Dada Patil Marg, opp. <br>
+                  Waman Hari Pethe Jewellers, <br>
+                  Thane, Maharashtra 400602</p>
+              <span>
+                  <a href="mailto: enquiry.thane@quaskills.com?.com">
+                      <img src="images/mail.png" class="mail" alt=""> enquiry.thane@quaskills.com </a>
+              </span>  <br> <br>
+              <span>
+                  <a href="wtai://wp/mc;8976988791">
+                      <img src="images/call.png" class="call" alt="">
+                      Tel: +91 89769 88791 </a>
+              </span>
+          </div>
+
+          <div class="mt-2">
+              <h3> <b> Services </b> </h3>
+              <a href="corporate_training.html">Co-orporate Training</a> <br>
+              <a href="digital_marketing_service.html">Digital Marketing Service</a> <br>
+              <a href="placement.html">Placement </a> <br>
+              <a href="seminar.html">College Seminar </a>
+          
+          <div class="d-flex align-items-center justify-content-center mt-2">
+              <a href="https://www.facebook.com/quaskills.official" target="_blank"> <button type="button" class="btn"
+                      data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook">
+                      <i class="fa fa-facebook-official Socials" style="font-size:30px; color: white;"></i>
+                  </button> </a> <br>
+              <a href="https://www.instagram.com/quaskills.official/" target="_blank"> <button type="button"
+                      class="btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Instagram">
+                      <i class="fa fa-instagram Socials" style="font-size:30px; color: white;"></i>
+                  </button> </a> <br>
+              <a href="https://www.youtube.com/@quastech1821"> <button type="button" class="btn"
+                      data-bs-toggle="tooltip" data-bs-placement="bottom" title="Youtube">
+                      <i class="fa fa-youtube-play Socials" style="font-size:30px; color: white;"></i>
+                  </button> </a> <br>
+              <a href="https://twitter.com/quaskills" target="_blank"> <button type="button" class="btn"
+                      data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter">
+                      <i class="fa fa-twitter-square Socials" style="font-size:30px; color: white;"></i>
+                  </button> </a>
+          </div>
+      </div>
+      </div>
+      
+      <span class=" mx-auto text-center d-block pb-3"> © 2018 QUASKILLS. All rights reserved </span> 
+  </footer>
+
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/63809f12b0d6371309d10e80/1gin6qop9';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+
+
+  <script>
+    function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
+    }
+
+    window.addEventListener("scroll", reveal);
+  </script>
+
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script language="javascript" type="text/javascript">
+
+$("#name").bind('input', function () {
+            if (checkExists($('#name').val()) === true) {
+                var url = "";
+                var text = $('#name').val();
+                switch (text) {
+                    case "About Us":
+                        url = 'About.html';
+                        break;
+                    case "Contact":
+                        url = 'contact.html';
+                        break;
+                    case "Blog":
+                        url = 'blog.html';
+                        break;
+                    case "Testimonals":
+                        url = "testimonals.html";
+                        break;
+                    case "digital Marketing course":
+                        url = 'digital_marketing_course.html';
+                        break;
+                    case "DataAnalysis&VisualizationCourse":
+                        url = 'data_analysis&visualzation_course.html';
+                        break;
+                    case "Accounting Course":
+                        url = 'accounting_course.html';
+                        break;
+                    case "Taxation Course":
+                        url = 'taxation_course.html';
+                        break;
+                    case "Graphic Designing course":
+                        url = 'graphic_designing_course.html';
+                        break;
+                    case "Web Graphic Designing course":
+                        url = 'web_graphic_designing_course.html';
+                        break;
+                    case "Management Information System course":
+                        url = 'management_information_system_course.html';
+                        break;
+                    case "Information Technology course":
+                        url = 'information_technology_course.html';
+                        break;
+                    case "Financial Accounting course":
+                        url = 'financial_accounting_course.html';
+                        break;
+                    case "corporate_training":
+                        url = 'corporate_training.html';
+                        break;
+                    case "digitalmarketing_service":
+                        url = 'digital_marketing_service.html';
+                        break;
+                    default:
+                        url = 'index.html';
+                }
+
+                window.location = url;
+            }
+        });
+
+    function checkExists(inputValue) {
+        console.log(inputValue);
+
+        var x = document.getElementById("browsers");
+        var i;
+        var flag;
+        for (i = 0; i < x.options.length; i++) {
+            if (inputValue == x.options[i].value) {
+                flag = true;
+            }
+        }
+        return flag;
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 50) {
+                document.getElementById('navbar_top').classList.add('fixed-top');
+                // add padding top to show content behind navbar
+                navbar_height = document.querySelector('.navbar').offsetHeight;
+                document.body.style.paddingTop = navbar_height + 'px';
+            } else {
+                document.getElementById('navbar_top').classList.remove('fixed-top');
+                // remove padding top from body
+                document.body.style.paddingTop = '0';
+            }
+        });
+    }); 
+</script>
+
+</body>
+
+</html>

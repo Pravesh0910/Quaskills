@@ -1,0 +1,272 @@
+li a {
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(6, 204, 254);
+}
+
+.divider{
+    border: 1px solid black;
+}
+
+.slide {
+    width: 250px;
+    clear: both;
+    height: 0px;
+    overflow: hidden;
+    transition: height .4s ease;
+}
+
+.touc:hover{
+    background: linear-gradient(-135deg, #881da8, #20668f);
+    color: whitesmoke;
+}
+#touch {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}
+#touch:checked+.slide {
+    height: 405px;
+}
+
+.slide1 {
+        width: 250px;
+    clear: both;
+    height: 0px;
+    overflow: hidden;
+    transition: height .4s ease;
+}
+
+#touch1 {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}
+
+#touch1:checked+.slide1 {
+    height: 95px;
+}
+
+.slide2 {
+    width: 250px;
+    clear: both;
+    height: 0px;
+    overflow: hidden;
+    transition: height .4s ease;
+}
+
+#touch2 {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}
+
+#touch2:checked+.slide2 {
+    height: 285px;
+}
+
+.slide3 {
+    width: 250px;
+    clear: both;
+    height: 0px;
+    overflow: hidden;
+    transition: height .4s ease;
+}
+
+#touch3 {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}
+
+#touch3:checked+.slide3 {
+    height: 235px;
+}
+
+.slide4 {
+        width: 250px;
+    clear: both;
+    height: 0px;
+    overflow: hidden;
+    transition: height .4s ease;
+}
+
+#touch4 {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}
+
+#touch4:checked+.slide4 {
+    height: 189px;
+}
+
+.slide5 {
+    width: 250px;
+    clear: both;
+    height: 0px;
+    overflow: hidden;
+    transition: height .4s ease;
+}
+
+#touch5 {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}
+
+#touch5:checked+.slide5 {
+    height: 140px;
+}
+
+.slide6 {
+        width: 250px;
+    clear: both;
+    height: 0px;
+    overflow: hidden;
+    transition: height .4s ease;
+}
+
+#touch6 {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}
+
+#touch6:checked+.slide6 {
+    height: 285px;
+}
+
+.slide7 {
+        width: 250px;
+    clear: both;
+    height: 0px;
+    overflow: hidden;
+    transition: height .4s ease;
+}
+
+#touch7 {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}
+
+#touch7:checked+.slide7 {
+    height: 95px;
+}
+
+.slide8 {
+    width: 250px;
+clear: both;
+height: 0px;
+overflow: hidden;
+transition: height .4s ease;
+}
+
+#touch8 {
+position: absolute;
+opacity: 0;
+height: 0px;
+}
+
+#touch8:checked+.slide8 {
+height: 140px;
+}
+
+.slide9 {
+    width: 250px;
+clear: both;
+height: 0px;
+overflow: hidden;
+transition: height .4s ease;
+}
+
+#touch9 {
+position: absolute;
+opacity: 0;
+height: 0px;
+}
+
+#touch9:checked+.slide9 {
+height: 405px;
+}
+
+.slide10 {
+    width: 250px;
+clear: both;
+height: 0px;
+overflow: hidden;
+transition: height .4s ease;
+}
+
+#touch10 {
+position: absolute;
+opacity: 0;
+height: 0px;
+}
+
+#touch10:checked+.slide10 {
+height: 430px;
+}
+
+
+/* fade-in */
+
+
+.fade-in-text {
+    font-family: Arial;
+    font-size: 60px;
+    animation: fadeIn;
+    -webkit-animation: fadeIn 3s;
+    -moz-animation: fadeIn 3s;
+    -o-animation: fadeIn 3s;
+    -ms-animation: fadeIn 3s;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }  
+
+  /* slide in */
+  .reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}  
+
+/* end */
+
+@media screen and (min-width:360px) and (max-width:414px) {
+	video{
+		width: 300px;
+	}
+}

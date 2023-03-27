@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+    <script type='text/javascript'
+        src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+        
+    <title>QuaSkills</title>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+
+    <div id="preloader">
+        <img src="loading.gif" class="preloader_img " alt="">
+    </div>
+
+
+    <header class="" style="width: 100%;">
+        <div class="header pt-2 d-flex flex-wrap justify-content-around align-items-center ">
+            <div class="d-flex flex-wrap justify-content-around w-50">
+                <a href="wtai://wp/mc;8976988791" class="fw-bold text-light"><img src="images/call.png" alt=""
+                        style="width: 24px;"> 89769 88791</a>
+                <a href='mailto: enquiry.thane@quaskills.com?.com' class=" ms-3fw-bold text-light"><img
+                        src="images/mail.png" alt="" style="width: 24px;">
+                    Enquire Now</a>
+                <span class="">
+                    <i class="fa fa-certificate" aria-hidden="true" class="me-5"> ISO 9001:2015</i>
+                </span>
+            </div>
+            <form class="d-flex pb-2 ">
+                <input class="form-control searchbar" type="search" placeholder="Search" aria-label="Search"
+                    id="name" list="browsers">
+                <datalist id="browsers">
+                    <option value="About Us" />
+                    <option value="Contact" />
+                    <option value="Blog" />
+                    <option value="Testimonals" />
+                    <option value="digital Marketing course" />
+                    <option value="DataAnalysis&VisualizationCourse" />
+                    <option value="Accounting Course" />
+                    <option value="Taxation Course" />
+                    <option value="Graphic Designing course" />
+                    <option value="Web Graphic Designing course" />
+                    <option value="MIS course" />
+                    <option value="Information Technology course" />
+                    <option value="Financial Accounting course" />
+                    <option value="corporate_training" />
+                    <option value="digitalmarketing_service" />
+                </datalist>
+                <button class="btn btn-outline-light " type="submit" id="name" list="browsers">Search</button>
+            </form>
+        </div>
+    </header>
+
+
+    <nav class="navbar navbar-expand-lg bg-infos fs-5 secondary" id="navbar_top"
+        style="background-color: rgb(245, 245, 245); color: black; font-weight: bolder;">
+        <div class="container-fluid navigate">
+            <a class="navbar-brand" href="index.html"> <img src="images/Final Logo Quaskills.png" class="" alt=""
+                    id="logoimg"> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav text-center" id="myUL">
+                    <li class="nav-item ps-4">
+                        <a class="nav-link" href="About.html">About Us</a>
+                    </li>
+                    <li class="nav-item ps-4 honav">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Courses
+                            </a>
+                            <ul class="drop dropdown-menu effect">
+                                <li class="dropdown dropend"> <div class=" dropdown bg-primary " >
+                                    <a class="ps-3 nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="" style="color: aliceblue;" target="">IT Courses</a>
+                                    <ul class="dropdown-menu visible" >
+                                        <li><a class="dropdown-item" href="https://www.quastech.in/software-testing-training.html" target="">Software Testing</a></li>
+                                        <li><a class="dropdown-item" href="https://www.quastech.in/full-stack-java-Development.html" target="">Full Stack Java development</a></li>
+                                        <li><a class="dropdown-item" href="https://www.quastech.in/full-stack-Python-Development.html" target="">Full stack Python development</a></li>
+                                        <li><a class="dropdown-item" href="https://www.quastech.in/python-data-science.html" target="">Python Data Science</a></li>
+                                        <li><a class="dropdown-item" href="https://www.quastech.in/java-training.html" target="">Java development</a></li>
+                                        <li><a class="dropdown-item" href="https://www.quastech.in/python-training.html" target="">Python development</a></li>
+                                        <li><a class="dropdown-item" href="https://www.quastech.in/web-designing-training.html" target="">Web Designing</a></li>
+                                    </ul>
+                                </div> </li>
+                                <li><a class="dropdown-item" href="digital_marketing_course.html">Digital Marketing
+                                        Course</a>
+                                </li>
+                                <li><a class="dropdown-item" href="data_analysis&visualzation_course.html">Data Analysis &
+                                        Visualzation Course</a></li>
+                                <li><a class="dropdown-item" href="accounting_course.html">Accounting Course</a></li>
+                                <li><a class="dropdown-item" href="taxation_course.html">Taxation Course</a></li>
+                                <li><a class="dropdown-item" href="graphic_designing_course.html">Graphic Designing
+                                        Course</a>
+                                </li>
+                                <li><a class="dropdown-item" href="web_graphic_designing_course.html">Web Graphic Designing
+                                        Course</a></li>
+                                <li><a class="dropdown-item" href="management_information_system_course.html">Management Information System(MIS)
+                                        Course</a></li>
+                                <li><a class="dropdown-item" href="information_technology_course.html">Information
+                                        Technology
+                                        Programme Course</a></li>
+                                <li><a class="dropdown-item" href="financial_accounting_course.html">Financial Accounting
+                                        Course</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item ps-4 honav">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="drop dropdown-menu effect">
+                                <li><a class="dropdown-item" href="corporate_training.html">Corporate Training </a></li>
+                                <li><a class="dropdown-item" href="digital_marketing_service.html">Digital Marketing
+                                        Service
+                                    </a></li>
+                                <li><a class="dropdown-item" href="placement.html">Placement </a></li>
+                                <li><a class="dropdown-item" href="seminar.html">College Seminar </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item ps-4">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item ps-4">
+                        <a class="nav-link" href="testimonals.html">Testimonals</a>
+                    </li>
+                    <li class="nav-item ps-4">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item ps-4">
+                        <a class="nav-link" href="FAQ's.html">FAQ's</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="section1" oncontextmenu="return false">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/digital marketing banners-01.jpg" class="d-block w-100 carouselimg"
+                        alt="Digital Marketing">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/data analyis and visulization banners-05.jpg" class="d-block w-100 carouselimg"
+                        alt="DataAnalysis & Visualization">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Accounting banners-02.jpg" class="d-block w-100 carouselimg" alt="Accounting">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Taxation banners-03.jpg" class="d-block w-100 carouselimg" alt="Taxation">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Graphic design banners-04.jpg" class="d-block w-100 carouselimg"
+                        alt="Graphic Designing">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/web graphic designing banners-06.jpg" class="d-block w-100 carouselimg"
+                        alt="Web Graphic Designing">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Mangement information system banners-07.jpg" class="d-block w-100 carouselimg"
+                        alt="Management Information Course">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Information technology system banners-08.jpg" class="d-block w-100 carouselimg"
+                        alt="Information Technology Programme">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/financal accounting banners-09.jpg" class="d-block w-100 carouselimg"
+                        alt="Financial Accounting">
+                </div>
+            </div>
+            <button class="carousel-control-prev carouselbtn " type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next carouselbtn " type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="https://api.whatsapp.com/send?phone=8976988791" id="about"><img src="images/whatsapp.png" alt=""
+                class="whatsapp"> 89769 88791</a>
+        <a href="wtai://wp/mc;8976988791" id="blog"><img src="images/call.png" alt="" class="call me-1" > 89769
+            88791</a>
+        <a href='mailto: enquiry.thane@quaskills.com?.com' id="projects"><img src="images/mail.png" alt="" class="mail">
+            Enquire Now</a>
+    </div>
+
+    <section id="section2" class="mt-5 container-fluid ">
+        <div class="d-flex flex-wrap justify-content-around align-items-center">
+            <div class=" reveal">
+                <p class="fs-5 text-start">
+                    <b class="text-primary fs-3">QUASKILLS </b> By QUASTECH is An ISO 9001:2015 recognized, premier
+                    training centre in Mumbai,We are committed to improving the quality of life
+                    through education. Our courses and certifications are designed to prepare individuals for a wide
+                    range of careers, helping them build their skills and gain valuable experience that will allow them
+                    to succeed in their chosen field. We work with some of the industry's best experts to ensure that
+                    our candidates go through intense training, covering a broad range of topics. Our online and offline
+                    courses are designed to ensure that they meet the needs of employers worldwide.
+                </p>
+            </div>
+            <div class="" oncontextmenu="return false">
+                <video src="images/quaskills training 1.mp4" autoplay loop class="quaskills_train"
+                    width="400px"></video>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Courses Section-->
+    <h1 class="text-center fw-bold text-primary mt-5 pb-3 ">
+        Courses
+    </h1>
+        <section id="section3" >
+            
+            <div class="swiper mySwiper container">
+              <div class="swiper-wrapper content">
+                <div class="swiper-slide card1">
+                  <div class="card-content">
+                    <div class="image">
+                      <img src="images/DM-01.svg" alt="Dm course" class="card-img" />
+                    </div>
+      
+                    <div class="name-profession">
+                      <h2 class="name">Digital Marketing Course</h2>
+                    </div>
+                    <div class="card-text">
+                      <p class="description">
+                        Digital Marketing gives the immediate results, helps in Brand
+                        development, Higher Exposure as well as Higher Engagement of
+                        Audiences, Digital Marketing is good for all the stages of
+                        field and quick Publicity.
+                      </p>
+                    </div>
+                    <div class="button">
+                      <a href="digitalmarketingcourse.html">
+                        <button class="button">Read More</button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card1">
+                  <div class="card-content">
+                    <div class="image">
+                      <img
+                        src="images/data analysi and visualization-01.svg"
+                        alt="Data Analysis visualization course"
+                        class="card-img"
+                      />
+                    </div>
+      
+                    <div class="name-profession">
+                      <h2 class="name">Data Analysis & Visualization Course</h2>
+                    </div>
+                    <div class="card-text">
+                      <p class="description">
+                        Data analysis and visualization is the process of transforming
+                        raw data into meaningful insights.This is a broad field that
+                        touches on statistics, computer science, and information
+                        design.
+                      </p>
+                    </div>
+                    <div class="button">
+                      <a href="data_analysis&visualzation_course.html">
+                        <button class="button">Read More</button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card1">
+                  <div class="card-content">
+                    <div class="image">
+                      <img
+                        src="images/Accounting-01.svg"
+                        alt="Accounting course"
+                        class="card-img"
+                      />
+                    </div>
+      
+                    <div class="name-profession">
+                      <h2 class="name">Accounting Course</h2>
+                    </div>
+                    <div class="card-text">
+                      <p class="description">
+                        Today’s business climate is fast-paced, dynamic and
+                        competitive.Companies that want to thrive in this environment
+                        need to make every process as efficient and streamlined as
+                        possible.
+                      </p>
+                    </div>
+                    <div class="button">
+                      <a href="accounting_course.html">
+                        <button class="button">Read More</button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card1">
+                  <div class="card-content">
+                    <div class="image">
+                      <img
+                        src="images/taxation-01.svg"
+                        alt="Taxation course"
+                        class="card-img"
+                      />
+                    </div>
+      
+                    <div class="name-profession">
+                      <h2 class="name">Taxation Course</h2>
+                    </div>
+                    <div class="card-text">
+                      <p class="description">
+                        If you’re a tax professional or an accounting major who plans
+                        to work as a tax accountant after graduation , you probably
+                        already know that taxes are a cornerstone of your
+                        career.Service tax forms part of the indirect tax
+                      </p>
+                    </div>
+                    <div class="button">
+                      <a href="taxation_course.html">
+                        <button class="button">Read More</button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card1">
+                  <div class="card-content">
+                    <div class="image">
+                      <img
+                        src="images/graphic design-01.svg"
+                        alt="Graphic Designing course"
+                        class="card-img"
+                      />
+                    </div>
+      
+                    <div class="name-profession">
+                      <h2 class="name">Graphic Designing Course</h2>
+                    </div>
+                    <div class="card-text">
+                      <p class="description">
+                        Graphic designing is one of the most sought-after professions,
+                        and it's not hard to see why. You get to work with some of the
+                        best designers. design your own ideas and bring out your own
+                        creativity.
+                      </p>
+                    </div>
+                    <div class="button">
+                      <a href="graphic_designing_course.html">
+                        <button class="button">Read More</button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card1">
+                  <div class="card-content">
+                    <div class="image">
+                      <img
+                        src="images/web graphic design-01.svg"
+                        alt="Web Graphic Designing course"
+                        class="card-img"
+                      />
+                    </div>
+      
+                    <div class="name-profession">
+                      <h2 class="name">Web Graphic Designing Course</h2>
+                    </div>
+                    <div class="card-text">
+                      <p class="description">
+                        With the growing popularity of websites, blogs, and social
+                        media, demand for web designers has increased. But it’s not
+                        just visual designers who are in demand. And career
+                        Opportunity in that Course Is Endless.
+                      </p>
+                    </div>
+                    <div class="button">
+                      <a href="web_graphic_designing_course.html">
+                        <button class="button">Read More</button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card1">
+                  <div class="card-content">
+                    <div class="image">
+                      <img
+                        src="images/mangement information system-01.svg"
+                        alt="MIS course"
+                        class="card-img"
+                      />
+                    </div>
+      
+                    <div class="name-profession">
+                      <h2 class="name">Management Information (MIS) Course</h2>
+                    </div>
+                    <div class="card-text">
+                      <p class="description">
+                        Management Information Systems (IS) is a group of people,
+                        processes, and technologies that support decision-making in an
+                        organization.MIS help companies manage internal operations and
+                        track performance
+                      </p>
+                    </div>
+                    <div class="button">
+                      <a href="management_information_system_course.html">
+                        <button class="button">Read More</button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card1">
+                  <div class="card-content">
+                    <div class="image">
+                      <img
+                        src="images/mangement information system-01.svg"
+                        alt="Information Technology course"
+                        class="card-img"
+                      />
+                    </div>
+      
+                    <div class="name-profession">
+                      <h2 class="name">Information Technology Programme Course</h2>
+                    </div>
+                    <div class="card-text">
+                      <p class="description">
+                        Thinking of becoming an IT specialist? This can be a very
+                        exciting opportunity for an individual who is passionate about
+                        Information Technology.You will get to learn how to use
+                        various technology tools, softwar
+                      </p>
+                    </div>
+                    <div class="button">
+                      <a href="information_technology_course.html">
+                        <button class="button">Read More</button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card1">
+                  <div class="card-content">
+                    <div class="image">
+                      <img
+                        src="images/Accounting-01.svg"
+                        alt="Financial Accounting course"
+                        class="card-img"
+                      />
+                    </div>
+      
+                    <div class="name-profession">
+                      <h2 class="name">Financial Accounting Course</h2>
+                    </div>
+                    <div class="card-text">
+                      <p class="description">
+                        Today’s business climate is fast-paced, dynamic and
+                        competitive. Companies that want to thrive in this environment
+                        need to make every process as efficient and streamlined as
+                        possible.
+                      </p>
+                    </div>
+                    <div class="button">
+                      <a href="financial_accounting_course.html">
+                        <button class="button">Read More</button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- <div class="swiper-pagination"></div> -->
+          </section>
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+          <script type="text/javascript" src="js/script.js"></script>
+
+    <section id="section4" class="">
+        <h1 class="text-center fw-bold text-primary">
+            Services
+        </h1>
+
+        <div class="d-flex flex-wrap mt-3 flipca align-items-center justify-content-center">
+            <a href="digital_marketing_service.html">
+                <div class="flip-card pt-3">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/digital marketing training.jpg" alt="digitalmarketing_service">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1 class="mt-5"></h1>
+                            <p class="mt-2">Corporate Training Is an Effective Way to Help Your Employees and
+                                Businesses. Quaskills Corporate Training Helps You Train Your Employees Using The Latest
+                                Techniques In The Corporate World. </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="placement.html">
+                <div class="flip-card pt-3">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/Placement.jpg" alt="placement">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1></h1>
+                            <p class="mt-5">We are committed to ensuring that each student who chooses Quastech is
+                                placed in an environment that will facilitate their development and growth.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="seminar.html">
+                <div class="flip-card pt-3">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/college seminar.jpg" alt="seminar">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1></h1>
+                            <p class="mt-5">A college seminar is an academic event where students, faculty members, and guest speakers come together to discuss a specific topic.Whether it's a single-day event or a multi-day. The seminar is typically organized around a series of lectures, discussions, and designed to explore the topic in-depth and encourage critical thinking and collaboration among attendees.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="section5" class="mt-5">
+        <h1 class="text-center text-primary fw-bold" >
+            Testimonals
+        </h1>
+
+        <div class="container-fluid testimonals mt-4">
+            <div class="row pt-3 ms-3">
+                <div class="col-lg-3 pb-2">
+                    <div class="card cardtest">
+                        <div class="face front-face">
+                            <img src="images/Gauri Narude.png" alt="gauri Narude" class="profile" >
+                            <div class="pt-3 text-uppercase name">
+                                Gauri Narude
+                            </div>
+                            <div class="designation">Advanced Digital Marketing</div>
+                        </div>
+                        <div class="face back-face">
+                            <div class="testimonial">
+                                Excellent training institute for advanced digital marketing course. It's a good place
+                                for learning, trainers like Arif sir is really very good and supportive, the knowledge
+                                he shared very useful to understanding the overall concept, I highly recommend this
+                                institute so go for it without any doubt.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 pb-2">
+                    <div class="card cardtest">
+                        <div class="face front-face">
+                            <img src="images/Saloni Lad.png" alt="Saloni Lad" class="profile">
+                            <div class="pt-3 text-uppercase name">
+                                Saloni Lad
+                            </div>
+                            <div class="designation text-center">Professional Data Analysis & Visualization</div>
+                        </div>
+                        <div class="face back-face">
+                            <div class="testimonial">
+                                Quaskills is really good institute for Data Analysis and Visualization Course. Our
+                                Faculty is Co-operative and Supportive. Environment of institute is really good. Our
+                                Trainer Sushil sir coperates and Motivates us. Lastly Thank you Islam sir and Amit sir
+                                for suggesting me this Course.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 pb-2">
+                    <div class="card cardtest">
+                        <div class="face front-face">
+                            <img src="images/shrutika more.png" alt="Shrutika more" class="profile">
+                            <div class="pt-3 text-uppercase name">
+                                Shrutika More
+                            </div>
+                            <div class="designation">Advanced Digital Marketing</div>
+                        </div>
+                        <div class="face back-face">
+                            <div class="testimonial">
+                                Good learning experience. Near the thane railway station. The staff is very cooperative.
+                                I specifically recommend Advanced Digital Marketing course from QUASKILLS BY QUASTECH.
+                                The trainer's teaching is excellent. They also offer placements in big companies.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 pb-3">
+                    <div class="card cardtest">
+                        <div class="face front-face">
+                            <img src="images/WhatsApp Image 2023-02-11 at 12.42.57 PM.jpeg" alt="" class="profile">
+                            <div class="pt-3 text-uppercase name">
+                                Mrinal Mandal
+                            </div>
+                            <div class="designation">Advanced Digital marketing</div>
+                        </div>
+                        <div class="face back-face">
+                            <div class="testimonial">
+                                Best institute for Advanced Digital marketing in Mumbai, with best faculty Arif Sir and
+                                at an affordable price. Also provides placements in best companies in Mumbai.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--slider-->
+    <section class="mt-5 container-fluid" id="section6">
+        <h1 class="text-center pb-3 text-primary fw-bold">
+            Our Clients
+        </h1>
+        <div class="slider-area">
+            <div class="wrapper">
+                <div class="item clientitem"><img alt="client1" src="images/client1.png" style=" height: 110px; "
+                        class="rounded-5"></div>
+                <div class="item clientitem"><img alt="client2" src="images/client2.png" style=" height: 110px; "
+                        class="rounded-5"></div>
+                <div class="item clientitem"><img alt="client3" src="images/client3.png" style=" height: 110px; "
+                        class="rounded-5"></div>
+                <div class="item clientitem"><img alt="client4" src="images/client4.png" style=" height: 110px; "
+                        class="rounded-5"></div>
+                <div class="item clientitem"><img alt="client5" src="images/client5.jpg" style=" height: 110px; "
+                        class="rounded-5"></div>
+                <div class="item clientitem"><img alt="client6" src="images/client6.png" style=" height: 110px; "
+                        class="rounded-5"></div>
+                <div class="item clientitem"><img alt="client7" src="images/client7.png" style=" height: 110px; "
+                        class="rounded-5"></div>
+                <div class="item clientitem"><img alt="client8" src="images/client8.png" style=" height: 110px; "
+                        class="rounded-5"></div>
+                <div class="item clientitem"><img alt="client9" src="images/client9.png" style=" height: 110px; "
+                        class="rounded-5"></div>
+            </div>
+        </div>
+    </section>
+    <br>
+
+
+
+
+    <!--Footer-->
+    <footer class="container-fluid" style="font-size: 1rem;">
+        <div class="footer pt-1">
+
+            <div class="map-responsive mt-2">
+                    <iframe class="rounded-5"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.1812067702053!2d72.97059941394056!3d19.187286187024142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b9d0d65fd0f7%3A0xc05e9433a2616e8a!2sQUASTECH%20-%20Software%20Testing%20Course%2C%20Python%20Development%2C%20Java%20Development%20course%2C%20python%20data%20science%2C%20digital%20marketing!5e0!3m2!1sen!2sin!4v1674018424695!5m2!1sen!2sin"
+                        width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div> 
+
+            <div class="mt-2">
+                <h3> <b> Courses </b> </h3>
+                <a class="dropdown-item" href="digital_marketing_course.html">Digital Marketing Course</a>
+
+                <a class="dropdown-item" href="data_analysis&visualzation_course.html">Data Analysis &
+                    Visualzation Course</a>
+                <a class="dropdown-item" href="accounting_course.html">Accounting Course</a>
+                <a class="dropdown-item" href="taxation_course.html">Taxation Course</a>
+                <a class="dropdown-item" href="graphic_designing_course.html">Graphic Designing Course</a>
+
+                <a class="dropdown-item" href="web_graphic_designing_course.html">Web Graphic Designing
+                    Course</a>
+                <a class="dropdown-item" href="management_information_system_course.html">MIS(Management Information) Course</a></li>
+                <a class="dropdown-item" href="information_technology_course.html">Information Technology
+                    Programme Course</a>
+                <a class="dropdown-item" href="financial_accounting_course.html">Financial Accounting
+                    Course</a>
+            </div>
+
+            <div class="mt-2">
+                <h3>
+                  <b>  Contact Us </b>
+                </h3>
+                <p >201, Anant Laxmi Chambers, <br>
+                    Dada Patil Marg, opp. <br>
+                    Waman Hari Pethe Jewellers, <br>
+                    Thane, Maharashtra 400602</p>
+                <span>
+                    <a href="mailto: enquiry.thane@quaskills.com?.com">
+                        <img src="images/mail.png" class="mail" alt=""> enquiry.thane@quaskills.com </a>
+                </span>  <br> <br>
+                <span>
+                    <a href="wtai://wp/mc;8976988791">
+                        <img src="images/call.png" class="call" alt="">
+                        Tel: +91 89769 88791 </a>
+                </span>
+            </div>
+
+            <div class="mt-2">
+                <h3> <b> Services </b> </h3>
+                <a href="corporate_training.html">Co-orporate Training</a> <br>
+                <a href="digital_marketing_service.html">Digital Marketing Service</a> <br>
+                <a href="placement.html">Placement </a> <br>
+                <a href="seminar.html">College Seminar </a>
+            
+            <div class="d-flex align-items-center justify-content-center mt-2">
+                <a href="https://www.facebook.com/quaskills.official" target="_blank"> <button type="button" class="btn"
+                        data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook">
+                        <i class="fa fa-facebook-official Socials" style="font-size:30px; color: white;"></i>
+                    </button> </a> <br>
+                <a href="https://www.instagram.com/quaskills.official/" target="_blank"> <button type="button"
+                        class="btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Instagram">
+                        <i class="fa fa-instagram Socials" style="font-size:30px; color: white;"></i>
+                    </button> </a> <br>
+                <a href="https://www.youtube.com/@quastech1821"> <button type="button" class="btn"
+                        data-bs-toggle="tooltip" data-bs-placement="bottom" title="Youtube">
+                        <i class="fa fa-youtube-play Socials" style="font-size:30px; color: white;"></i>
+                    </button> </a> <br>
+                <a href="https://twitter.com/quaskills" target="_blank"> <button type="button" class="btn"
+                        data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter">
+                        <i class="fa fa-twitter-square Socials" style="font-size:30px; color: white;"></i>
+                    </button> </a>
+            </div>
+        </div>
+        </div>
+        
+        <span class=" mx-auto text-center d-block pb-3"> © 2018 QUASKILLS. All rights reserved </span> 
+    </footer>
+
+    
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/63809f12b0d6371309d10e80/1gin6qop9';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+    </script>
+
+
+    <script>
+
+        var swiper = new Swiper(".slide-content", {
+            slidesPerView: 3,
+            spaceBetween: 25,
+            loop: true,
+            centerSlide: 'true',
+            fade: 'true',
+            grabCursor: 'true',
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                520: {
+                    slidesPerView: 2,
+                },
+                950: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+
+    </script>
+
+    <script>
+        app.post("/send", (req, res) => {
+            const { recipientEmail } = req.body;
+            sendEmailTo("pravesh2001p@gmail.com");
+        })
+    </script>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script language="javascript" type="text/javascript">
+
+        $("#name").bind('input', function () {
+            if (checkExists($('#name').val()) === true) {
+                var url = "";
+                var text = $('#name').val();
+                switch (text) {
+                    case "About Us":
+                        url = 'About.html';
+                        break;
+                    case "Contact":
+                        url = 'contact.html';
+                        break;
+                    case "Blog":
+                        url = 'blog.html';
+                        break;
+                    case "Testimonals":
+                        url = "testimonals.html";
+                        break;
+                    case "digital Marketing course":
+                        url = 'digital_marketing_course.html';
+                        break;
+                    case "DataAnalysis&VisualizationCourse":
+                        url = 'data_analysis&visualzation_course.html';
+                        break;
+                    case "Accounting Course":
+                        url = 'accounting_course.html';
+                        break;
+                    case "Taxation Course":
+                        url = 'taxation_course.html';
+                        break;
+                    case "Graphic Designing course":
+                        url = 'graphic_designing_course.html';
+                        break;
+                    case "Web Graphic Designing course":
+                        url = 'web_graphic_designing_course.html';
+                        break;
+                    case "Management Information System course":
+                        url = 'management_information_system_course.html';
+                        break;
+                    case "Information Technology course":
+                        url = 'information_technology_course.html';
+                        break;
+                    case "Financial Accounting course":
+                        url = 'financial_accounting_course.html';
+                        break;
+                    case "corporate_training":
+                        url = 'corporate_training.html';
+                        break;
+                    case "digitalmarketing_service":
+                        url = 'digital_marketing_service.html';
+                        break;
+                    default:
+                        url = 'index.html';
+                }
+
+                window.location = url;
+            }
+        });
+
+        function checkExists(inputValue) {
+            console.log(inputValue);
+
+            var x = document.getElementById("browsers");
+            var i;
+            var flag;
+            for (i = 0; i < x.options.length; i++) {
+                if (inputValue == x.options[i].value) {
+                    flag = true;
+                }
+            }
+            return flag;
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 50) {
+                    document.getElementById('navbar_top').classList.add('fixed-top');
+                    // add padding top to show content behind navbar
+                    navbar_height = document.querySelector('.navbar').offsetHeight;
+                    document.body.style.paddingTop = navbar_height + 'px';
+                } else {
+                    document.getElementById('navbar_top').classList.remove('fixed-top');
+                    // remove padding top from body
+                    document.body.style.paddingTop = '0';
+                }
+            });
+        }); 
+    </script>
+    <!-- script for dropdown -->
+    <script>
+        let dropdowns = document.querySelectorAll('.dropdown-toggle')
+    dropdowns.forEach((dd)=>{
+        dd.addEventListener('click', function (e) {
+            var el = this.nextElementSibling
+            el.style.display = el.style.display==='block'?'none':'block'
+        })
+    })
+    </script>
+
+</body>
+
+</html>

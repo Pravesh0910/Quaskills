@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
+  <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+  <script type='text/javascript'
+    src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+  <title>Accounting Course</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="course.css">
+  <style>
+    .slide {
+      width: 250px;
+      clear: both;
+      height: 0px;
+      overflow: hidden;
+      transition: height .4s ease;
+    }
+
+    .touc:hover {
+      background: linear-gradient(-135deg, #881da8, #20668f);
+      color: whitesmoke;
+    }
+
+    #touch {
+      position: absolute;
+      opacity: 0;
+      height: 0px;
+    }
+
+    #touch:checked+.slide {
+      height: 550px;
+    }
+
+    .slide1 {
+      width: 250px;
+      clear: both;
+      height: 0px;
+      overflow: hidden;
+      transition: height .4s ease;
+    }
+
+    #touch1 {
+      position: absolute;
+      opacity: 0;
+      height: 0px;
+    }
+
+    #touch1:checked+.slide1 {
+      height: 550px;
+    }
+
+    .slide2 {
+      width: 250px;
+      clear: both;
+      height: 0px;
+      overflow: hidden;
+      transition: height .4s ease;
+    }
+
+    #touch2 {
+      position: absolute;
+      opacity: 0;
+      height: 0px;
+    }
+
+    #touch2:checked+.slide2 {
+      height: 455px;
+    }
+
+    .slide3 {
+      width: 250px;
+      clear: both;
+      height: 0px;
+      overflow: hidden;
+      transition: height .4s ease;
+    }
+
+    #touch3 {
+      position: absolute;
+      opacity: 0;
+      height: 0px;
+    }
+
+    #touch3:checked+.slide3 {
+      height: 215px;
+    }
+
+    .slide4 {
+      width: 250px;
+      clear: both;
+      height: 0px;
+      overflow: hidden;
+      transition: height .4s ease;
+    }
+
+    #touch4 {
+      position: absolute;
+      opacity: 0;
+      height: 0px;
+    }
+
+    #touch4:checked+.slide4 {
+      height: 215px;
+    }
+
+    .reveal {
+      width: 600px;
+      text-align: center;
+    }
+
+    @media screen and (min-width:360px) and (max-width:414px) {
+      .reveal {
+        width: fit-content;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="" style="width: 100%;">
+    <div class="header pt-2 d-flex flex-wrap justify-content-around align-items-center ">
+      <div class="d-flex flex-wrap justify-content-around w-50">
+        <a href="wtai://wp/mc;8976988791" class="fw-bold text-light"><img src="images/call.png" alt=""
+            style="width: 24px;"> 89769 88791</a>
+        <a href='mailto: enquiry.thane@quaskills.com?.com' class=" ms-3fw-bold text-light"><img src="images/mail.png"
+            alt="" style="width: 24px;">
+          Enquire Now</a>
+        <span class="">
+          <i class="fa fa-certificate" aria-hidden="true" class="me-5"> ISO 9001:2015</i>
+        </span>
+      </div>
+      <form class="d-flex pb-2 ">
+        <input class="form-control searchbar" type="search" placeholder="Search" aria-label="Search" id="name"
+          list="browsers">
+        <datalist id="browsers">
+          <option value="About Us" />
+          <option value="Contact" />
+          <option value="Blog" />
+          <option value="Testimonals" />
+          <option value="digital Marketing course" />
+          <option value="DataAnalysis&VisualizationCourse" />
+          <option value="Accounting Course" />
+          <option value="Taxation Course" />
+          <option value="Graphic Designing course" />
+          <option value="Web Graphic Designing course" />
+          <option value="MIS course" />
+          <option value="Information Technology course" />
+          <option value="Financial Accounting course" />
+          <option value="corporate_training" />
+          <option value="digitalmarketing_service" />
+        </datalist>
+        <button class="btn btn-outline-light " type="submit" id="name" list="browsers">Search</button>
+      </form>
+    </div>
+  </header>
+
+
+  <nav class="navbar navbar-expand-lg bg-infos fs-5 secondary" id="navbar_top"
+  style="background-color: rgb(245, 245, 245); color: black; font-weight: bolder;">
+  <div class="container-fluid navigate">
+      <a class="navbar-brand" href="index.html"> <img src="images/Final Logo Quaskills.png" class="" alt=""
+              id="logoimg"> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav text-center" id="myUL">
+              <li class="nav-item ps-4">
+                  <a class="nav-link" href="About.html">About Us</a>
+              </li>
+              <li class="nav-item ps-4 honav">
+                  <div class="dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          Courses
+                      </a>
+                      <ul class="drop dropdown-menu effect">
+                          <li class="dropdown dropend"> <div class=" dropdown bg-primary " >
+                              <a class="ps-3 nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="" style="color: aliceblue;" target="_blank">IT Courses</a>
+                              <ul class="dropdown-menu visible" >
+                                  <li><a class="dropdown-item" href="https://www.quastech.in/software-testing-training.html" target="_blank">Software Testing</a></li>
+                                  <li><a class="dropdown-item" href="https://www.quastech.in/full-stack-java-Development.html" target="_blank">Full Stack Java development</a></li>
+                                  <li><a class="dropdown-item" href="https://www.quastech.in/full-stack-Python-Development.html" target="_blank">Full stack Python development</a></li>
+                                  <li><a class="dropdown-item" href="https://www.quastech.in/python-data-science.html" target="_blank">Python Data Science</a></li>
+                                  <li><a class="dropdown-item" href="https://www.quastech.in/java-training.html" target="_blank">Java development</a></li>
+                                  <li><a class="dropdown-item" href="https://www.quastech.in/python-training.html" target="_blank">Python development</a></li>
+                                  <li><a class="dropdown-item" href="https://www.quastech.in/web-designing-training.html" target="_blank">Web Designing</a></li>
+                              </ul>
+                          </div> </li>
+                          <li><a class="dropdown-item" href="digital_marketing_course.html">Digital Marketing
+                                  Course</a>
+                          </li>
+                          <li><a class="dropdown-item" href="data_analysis&visualzation_course.html">Data Analysis &
+                                  Visualzation Course</a></li>
+                          <li><a class="dropdown-item" href="accounting_course.html">Accounting Course</a></li>
+                          <li><a class="dropdown-item" href="taxation_course.html">Taxation Course</a></li>
+                          <li><a class="dropdown-item" href="graphic_designing_course.html">Graphic Designing
+                                  Course</a>
+                          </li>
+                          <li><a class="dropdown-item" href="web_graphic_designing_course.html">Web Graphic Designing
+                                  Course</a></li>
+                          <li><a class="dropdown-item" href="management_information_system_course.html">Management Information System(MIS)
+                                  Course</a></li>
+                          <li><a class="dropdown-item" href="information_technology_course.html">Information
+                                  Technology
+                                  Programme Course</a></li>
+                          <li><a class="dropdown-item" href="financial_accounting_course.html">Financial Accounting
+                                  Course</a></li>
+                      </ul>
+                  </div>
+              </li>
+              <li class="nav-item ps-4 honav">
+                  <div class="dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          Services
+                      </a>
+                      <ul class="drop dropdown-menu effect">
+                          <li><a class="dropdown-item" href="corporate_training.html">Corporate Training </a></li>
+                          <li><a class="dropdown-item" href="digital_marketing_service.html">Digital Marketing
+                                  Service
+                              </a></li>
+                          <li><a class="dropdown-item" href="placement.html">Placement </a></li>
+                          <li><a class="dropdown-item" href="seminar.html">College Seminar </a></li>
+                      </ul>
+                  </div>
+              </li>
+              <li class="nav-item ps-4">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item ps-4">
+                  <a class="nav-link" href="testimonals.html">Testimonals</a>
+              </li>
+              <li class="nav-item ps-4">
+                  <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item ps-4">
+                  <a class="nav-link" href="FAQ's.html">FAQ's</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="https://api.whatsapp.com/send?phone=8976988791" id="about"><img src="images/whatsapp.png" alt=""
+        class="whatsapp"> 89769 88791</a>
+    <a href="wtai://wp/mc;8976988791" id="blog"><img src="images/call.png" alt="" class="call me-1"> 89769
+      88791</a>
+    <a href='mailto: enquiry.thane@quaskills.com?.com' id="projects"><img src="images/mail.png" alt="" class="mail">
+      Enquire Now</a>
+  </div>
+
+  <section id="section1">
+    <img src="images/Accounting banners-02.jpg" class="fade-in-text" alt="" style="width: 100%;">
+  </section>
+
+  <h1 class="text-center mt-5">
+    <span class=""> Accounting Course </span>
+  </h1>
+
+  <section id="Contentinfo" class="mt-5 " oncontextmenu="return false">
+    <div class="d-flex justify-content-around flex-wrap align-items-center">
+      <div class="reveal">
+        <p class="mt-3  text-start" style="font-size: 20px;">Professional Accounting is the process of recording
+          financial
+          transactions pertaining to a business. The accounting process includes summarizing, analyzing, and
+          reporting these transactions to oversight agencies, regulators, and tax collection entities. The
+          financial statements used in accounting are a concise summary of financial transactions over an
+          accounting period, summarizing a company's operations, financial position, and cashflows. </p>
+      </div>
+      <div>
+        <video src="Course/Accounting.mp4" autoplay loop width="350px"></video>
+      </div>
+    </div>
+  </section>
+
+  <section id="section2" class="mt-5 " oncontextmenu="return false">
+    <div class="d-flex justify-content-around flex-wrap align-items-center">
+      <div>
+        <video src="Course/Introduction to Accounting.mp4" autoplay loop width="350px"></video>
+      </div>
+      <div class="reveal">
+
+        <h3 class="text-center">Introduction to Accounting</h3>
+        <p class=" fs-5 text-start">
+          Financial accounting is the systematic process of recording and summarizing financial transactions, such
+          as credit sales to customers and cash receipts from sales. Accounting also prepares and presents
+          financial reports for external users such as investors, creditors, and researchers. The activity of
+          gathering, evaluating, and communicating financial information to stakeholders is known as financial
+          accounting. Financial accounting includes recording financial transactions; preparing financial
+          statements, and analyzing trends in the data.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="section2" class="mt-5 " oncontextmenu="return false">
+    <div class="d-flex justify-content-around flex-wrap align-items-center">
+
+      <div class="reveal">
+        <h3 class="text-center">Manual Accounting</h3>
+        <p class=" fs-5 text-start">
+          A bookkeeping program known as manual accounting is used to manage financial records without the use of a
+          computer system running specialist accounting software. You do not need to be an expert in accounting to
+          use a manual system. You must simply be able to read and write - this is why the majority of
+          accountants use a manual accounting system. The process of accounting is the writing of journal entries
+          after certain business transactions. The purpose is to record how much has been received and how
+          much has been paid out. In order to record transactions, it is necessary to make entries in a journal or
+          ledger. The most common type of ledger includes an account for each transaction, with information
+          about the date, amount, and name of whoever entered the transaction into the company record.
+        </p>
+      </div>
+      <div>
+        <video src="Course/manual accounting.mp4" autoplay loop width="350px"></video>
+      </div>
+    </div>
+  </section>
+
+  <section id="section2" class="mt-5 " oncontextmenu="return false">
+    <div class="d-flex justify-content-around flex-wrap align-items-center">
+      <div>
+        <video src="Course/computerized accounting.mp4" autoplay loop width="350px"></video>
+      </div>
+      <div class="reveal">
+
+        <h3 class="text-center">Computerized Accounting</h3>
+        <p class=" fs-5 text-start">
+          A computerized accounting system (CAS) is an integrated software package used in a business or
+          organization to manage accounting and financial operations. The term “computerized” means that the
+          information is stored digitally instead of on paper. Examples include systems used for cash management
+          and receivables collection and management, payrolls and expense reporting, general ledger maintenance,
+          and functional support for bookkeepers.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="section2" class="mt-5 " oncontextmenu="return false">
+    <div class="d-flex justify-content-around flex-wrap align-items-center">
+      <div class="reveal">
+        <h3 class="text-center">Benefit of Tally</h3>
+        <p class=" fs-5 text-start">
+          Tally is a leading cloud accounting and payroll automation platform that helps businesses run more
+          efficiently. It enables its users to work with multiple company accounts simultaneously, create job
+          workflows, update information in real time as soon as voucher entries are made available, and quickly
+          close jobs without errors or mismatches.
+        </p>
+      </div>
+      <div>
+        <video src="Course/Benefit of Tally.mp4" autoplay loop width="350px"></video>
+      </div>
+    </div>
+  </section>
+
+  <section id="section2" class="mt-5 " oncontextmenu="return false">
+    <div class="d-flex justify-content-around flex-wrap align-items-center">
+      <div>
+        <video src="Course/feature of tally.mp4" autoplay loop width="350px"></video>
+      </div>
+      <div class="reveal">
+        <h3 class="text-center">Feature of Tally</h3>
+        <p class=" fs-5 text-start">
+          Tally is used to generating consolidated financial statements as per the requirements of the company. it
+          can manage single or multiple groups. it is used to generate consolidated financial statements as per the
+          <br> requirements of the company. You can use this product to manage accounts receivable, inventory,
+          sales and purchase administration, financial statement process management, and also a long list of MIS
+          projects that are involved in creating reports and charts.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="section2" class="mt-5 " oncontextmenu="return false">
+    <div class="d-flex justify-content-around flex-wrap align-items-center">
+      <div class="reveal">
+        <h3 class="text-center">Accounting Master</h3>
+        <p class=" fs-5 text-start">
+          The accounting master is a comprehensive set of accounting tools that simplify the process of preparing
+          your company’s financial statements. It provides you with accounting information lists like groups,
+          ledgers, and voucher types to which you can add all account details useful for presentation in a
+          company’s annual report. The accounting master also creates financial statements, such as the balance
+          sheet, profit-and-loss statement and cash flow statement. It’s easy to use and helps you keep track
+          of your business finances with ease.
+        </p>
+      </div>
+      <div>
+        <video src="Course/accounting master.mp4" autoplay loop width="350px"></video>
+      </div>
+    </div>
+  </section>
+
+  <section id="section2" class="mt-5 " oncontextmenu="return false">
+    <div class="d-flex justify-content-around flex-wrap align-items-center">
+      <div>
+        <video src="Course/Stock Category.mp4" autoplay loop width="350px"></video>
+      </div>
+      <div class="reveal">
+        <h3 class="text-center">Stock Category</h3>
+        <p class=" fs-5 text-start">
+          Stock Categories are defined by similarity in behaviour and allow a multi- dimensional view of the data.
+          Similar to stock Groups, classification is based on behavioural similarities. For example, the Stock Item
+          Classifier classifies single or multiple stock items based on whether they have a serial number. The
+          purpose of the Stock Item Classifier is to classify single or multiple stock items into one of two
+          categories: serialized or non-serialized. This allows you to view your data in a different way, by
+          organizing it based on its behaviour rather than just by stock item type.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="section2" class="mt-5 " oncontextmenu="return false">
+    <div class="d-flex justify-content-around flex-wrap align-items-center">
+      <div class="reveal">
+        <h3 class="text-center">Stock Group</h3>
+        <p class=" fs-5 text-start">
+          In Tally, the stock group is used to help in the classification of stock items according to their
+          behaviour. In Tally, the grouping of stocks enables us to show customers at a glance how many and which
+          products are in stock. This information is important for all users, such as managers and sales
+          staff, who need information quickly and can take action on this basis. This is also very important for
+          customers who want to know whether they can buy something at a given price. With our Stock Groups
+          feature, you can ask questions like whether a certain stock item is available or if it’s on sale
+          right now.
+        </p>
+      </div>
+      <div>
+        <video src="Course/Stock Group.mp4" autoplay loop width="350px"></video>
+      </div>
+    </div>
+  </section>
+
+  <section id="section2" class="mt-5 " oncontextmenu="return false">
+    <div class="d-flex justify-content-around flex-wrap align-items-center">
+      <div>
+        <video src="Course/Stock Items_1.mp4" autoplay loop width="350px"></video>
+      </div>
+      <div class="reveal">
+        <h3 class="text-center">Stock Items</h3>
+        <p class=" fs-5 text-start">
+          Stock Item means you can enter a Product ID into the Tally system and then create a stock item based upon
+          what is on hand. Your inventory may be made up of multiple items and these items will be correctly
+          understood by Tally as one stock item.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="section2" class="mt-5 " oncontextmenu="return false">
+    <div class="d-flex justify-content-around flex-wrap align-items-center">
+      <div class="reveal">
+        <h3 class="">Inventory Vouchers</h3>
+        <p class=" fs-5 text-start">
+          Inventory vouchers are documents that record the receipt and issue of goods/stock, and transfers of stock
+          between locations. For example, a retail store would issue an Inventory Voucher for each item sold
+          into inventory. In the case of inventory transfers between locations, accounts receivable would be
+          written off when the inventory is sold or used in production. </p>
+        <p class="fs-5 text-start">
+          <b>Type of Vouchers</b>
+        <div class="d-flex flex-wrap">
+          <ul class="fs-5">
+            <li>Sales Voucher.</li>
+            <li>Purchase Voucher.</li>
+            <li>Payment Voucher.</li>
+            <li>Receipt Voucher.</li>
+          </ul>
+          <ul class="fs-5">
+            <li>Contra Voucher.</li>
+            <li>journal Voucher.</li>
+            <li>Credit Note Voucher.</li>
+            <li>Debit Note Voucher.</li>
+          </ul>
+        </div>
+        </p>
+      </div>
+      <div>
+        <video src="Course/Inventory Vouchers.mp4" autoplay loop width="350px"></video>
+      </div>
+    </div>
+  </section>
+
+  <section id="section2" class="mt-5 " oncontextmenu="return false">
+    <div class="d-flex justify-content-around flex-wrap align-items-center">
+      <div>
+        <video src="Course/Cost Center.mp4" autoplay loop width="350px"></video>
+      </div>
+      <div class="reveal">
+        <h3 class="text-center">Cost Center</h3>
+        <p class=" fs-5 text-start">
+          "Cost center" refers to the cost center in which expenses are recorded. A cost center refers to a
+          specific organizational unit from which costs or expenses can be allocated during transactions,
+          while a cost category refers to a parallel set of cost centers. Cost centers can also be defined by their
+          functions and activities, for example, the discrete units that give rise to the total order value
+          are called PO s. However, these shall not be used as a name for organizational units.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="section2" class="mt-5 " oncontextmenu="return false">
+    <div class="d-flex justify-content-around flex-wrap align-items-center">
+      <div class="reveal">
+        <h3 class="text-center">Cost Category</h3>
+        <p class=" fs-5 text-start">
+          "Cost category" refers to a cost center that can be used for isolating costs. Cost categories are useful
+          for organizations that require the allocation of revenue and non-revenue items to parallel sets of cost
+          centers. Examples include manufacturing and retail industries, where different cost centers are used
+          for financial reporting separately from each other and in which costs may be allocated across multiple
+          categories such as product cost and overhead.
+        </p>
+      </div>
+      <div>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player src="https://lottie.host/840cfbea-869a-41b3-8d34-e7ef7c9a2df9/XJ9pw3ysYw.json"
+          background="transparent" speed="1" style="width: 350px; height: 300px;" loop autoplay></lottie-player>
+      </div>
+    </div>
+  </section>
+
+  <div class="mt-3 container tags">
+    <h4> <b> Tags: </b> Accounting, Manual accounting, Computerized accounting, Tally, Excel,Accounting reports tally,
+      Books of accounting</h4>
+
+
+  </div>
+  <div class="divider mt-3 border border-bottom border-dark">
+  </div>
+
+  <section id="sect3" class="">
+    <h2 class="text-center mt-5">
+      Professional Accounting Course Content
+    </h2>
+
+    <div class="d-flex justify-content-around flex-wrap">
+
+      <div>
+        <label for="touch"><i class="fa fa-angle-down mt-4 touc"
+            style="font-size:24px; border: 2px solid black; background-color: #009bff;color: aliceblue;width: 260px; border-radius: 10px; padding: 8px 10px;">
+            Module 1
+          </i></label>
+        <input type="checkbox" id="touch">
+
+        <ol class="slide">
+          <b>
+            <li>Introduction to Accounting</li>
+          </b>
+          <ul type="disc">
+            <li>Benefits of Accounting</li>
+            <li>Various terms used in accounting</li>
+          </ul>
+          <b>
+            <li>Manual Accounting</li>
+          </b>
+          <ul type="disc">
+            <li>Books of Account</li>
+            <li>Transactions</li>
+            <li>Journal Entries</li>
+            <li>Vouchers Entries</li>
+            <li>Accounting Ledgers</li>
+            <li>Ledgers Posting</li>
+          </ul>
+          <b>
+            <li>Computerized Accounting</li>
+          </b>
+          <ul type="disc">
+            <li>Transactions in Tally</li>
+            <li>Ledgers in Tally</li>
+            <li>Vouchers in Tally</li>
+          </ul>
+          <b>
+            <li>Benefit of Tally</li>
+          </b>
+          <b>
+            <li>Feature of Tally</li>
+          </b>
+          <b>
+            <li>Company Information</li>
+          </b>
+          <ul type="disc">
+            <li>Company Creation</li>
+            <li>Company Selection</li>
+            <li>Company Deletion</li>
+            <li>Company Alteration</li>
+          </ul>
+          <b>
+            <li>Accounting Report in Tally</li>
+          </b>
+        </ol>
+      </div>
+      <div>
+        <label for="touch1"><i class="fa fa-angle-down mt-4 touc"
+            style="font-size:24px; border: 2px solid black; background-color: #009bff;color: aliceblue;width: 260px; border-radius: 10px; padding: 8px 10px;">
+            Module 2
+          </i></label>
+        <input type="checkbox" id="touch1">
+
+        <ol class="slide1">
+          <b>
+            <li>Accounting Master</li>
+          </b>
+          <ul type="disc">
+            <li>Account Info</li>
+            <li>Inventory Info</li>
+          </ul>
+          <b>
+            <li>Stock Category</li>
+          </b>
+          <ul type="disc">
+            <li>Single</li>
+            <li>Multiple</li>
+          </ul>
+          <b>
+            <li>Stock Group</li>
+          </b>
+          <ul type="disc">
+            <li>Single</li>
+            <li>Multiple</li>
+          </ul>
+          <b>
+            <li>Stock Items</li>
+          </b>
+          <ul type="disc">
+            <li>Create</li>
+            <li>Alter</li>
+            <li>Display</li>
+          </ul>
+          <b>
+            <li>Inventory Vouchers</li>
+          </b>
+          <ul type="disc">
+            <li>Types</li>
+          </ul>
+          <b>
+            <li>Cost Center</li>
+          </b>
+          <ul type="disc">
+            <li>Single</li>
+            <li>Multiple</li>
+          </ul>
+          <b>
+            <li>Cost Category</li>
+          </b>
+          <ul type="disc">
+            <li>Single</li>
+            <li>Multiple</li>
+          </ul>
+          <b>
+            <li>Bank Reconciliation Statements</li>
+          </b>
+          <b>
+            <li>Budget</li>
+          </b>
+        </ol>
+      </div>
+
+      <div>
+        <label for="touch2"><i class="fa fa-angle-down mt-4 touc"
+            style="font-size:24px; border: 2px solid black; background-color: #009bff;color: aliceblue;width: 260px; border-radius: 10px; padding: 8px 10px;">
+            Module 3
+          </i></label>
+        <input type="checkbox" id="touch2">
+
+        <ol class="slide2">
+          <b>
+            <li>TAX</li>
+          </b>
+          <ul type="disc">
+            <li>General Terminology</li>
+            <li>Percentages</li>
+            <li>Computation of VAT</li>
+          </ul>
+          <b>
+            <li>TDS(Tax Deducted at Source)</li>
+          </b>
+          <ul type="disc">
+            <li>e-TDS</li>
+            <li>Statutory Information</li>
+            <li>TDS Computation</li>
+          </ul>
+          <b>
+            <li>TCS(Tax Collected at Source)</li>
+          </b>
+          <ul type="disc">
+            <li>classification</li>
+            <li>Statutory Information</li>
+            <li>TCS Computation</li>
+          </ul>
+          <b>
+            <li>Service Tax</li>
+          </b>
+          <ul type="disc">
+            <li>Service Tax Computation</li>
+            <li>Report</li>
+          </ul>
+          <b>
+            <li>GST(Goods and Service Tax)</li>
+          </b>
+          <ul type="disc">
+            <li>Introduction</li>
+            <li>Benefits</li>
+            <li>GST Computation</li>
+          </ul>
+        </ol>
+      </div>
+    </div>
+    <div class="d-flex justify-content-around flex-wrap">
+
+      <div>
+        <label for="touch3"><i class="fa fa-angle-down mt-4 touc"
+            style="font-size:24px; border: 2px solid black; background-color: #009bff;color: aliceblue;width: 260px; border-radius: 10px; padding: 8px 10px;">
+            Module 4
+          </i></label>
+        <input type="checkbox" id="touch3">
+
+        <ol class="slide3">
+          <b>
+            <li>Payroll System</li>
+          </b>
+          <ul type="disc">
+            <li>Introduction</li>
+            <li>Features</li>
+          </ul>
+          <b>
+            <li>Creating Employee Master</li>
+          </b>
+          <b>
+            <li>Creating Heads</li>
+          </b>
+          <b>
+            <li>Payroll Vouchers</li>
+          </b>
+          <b>
+            <li>Salary Details</li>
+          </b>
+          <b>
+            <li>Payslip</li>
+          </b>
+          <b>
+            <li>Payroll Register</li>
+          </b>
+        </ol>
+      </div>
+
+      <div>
+        <label for="touch4"><i class="fa fa-angle-down mt-4 touc"
+            style="font-size:24px; border: 2px solid black; background-color: #009bff;color: aliceblue;width: 260px; border-radius: 10px; padding: 8px 10px;">
+            Module 5
+          </i></label>
+        <input type="checkbox" id="touch4">
+
+        <ol class="slide4">
+          <b>
+            <li>Utilities</li>
+          </b>
+          <ul type="disc">
+            <li>Import data</li>
+            <li>Banking</li>
+          </ul>
+          <b>
+            <li>Reports</li>
+          </b>
+          <ul type="disc">
+            <li>Balance Sheet</li>
+            <li>Profit & Loss Account</li>
+            <li>Stock Summary</li>
+            <li>Ratio Analysis</li>
+          </ul>
+          <b>
+            <li>Display & Printing</li>
+          </b>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mt-4">
+    <h2 class="text-center mb-3">
+      FAQ's
+    </h2>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            What Is Accounting?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Accounting is the systematic process of recording and summarizing financial transactions, such as credit
+            sales to customers and cash receipts from sales.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Manual Accounting?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            A book keeping program known as manual accounting is used to manage financial records without the use of a
+            computer system running specialist accounting software.
+
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Computerized Accounting?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            A computerized accounting system (CAS) is an integrated software package used in a business or organization
+            to manage accounting and financial operations. The term “computerized” means that the information is stored
+            digitally instead of on paper.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Benefit of Tally?
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Tally is a leading cloud accounting and payroll automation platform that helps businesses run more
+            efficiently. </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            Accounting Master?
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            The accounting master is a comprehensive set of accounting tools that simplify the process of preparing your
+            company’s financial statements.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Footer-->
+  <footer class="container-fluid" style="font-size: 1rem;">
+    <div class="footer pt-1">
+
+        <div class="map-responsive mt-2">
+                <iframe class="rounded-5"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.1812067702053!2d72.97059941394056!3d19.187286187024142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b9d0d65fd0f7%3A0xc05e9433a2616e8a!2sQUASTECH%20-%20Software%20Testing%20Course%2C%20Python%20Development%2C%20Java%20Development%20course%2C%20python%20data%20science%2C%20digital%20marketing!5e0!3m2!1sen!2sin!4v1674018424695!5m2!1sen!2sin"
+                    width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div> 
+
+        <div class="mt-2">
+            <h3> <b> Courses </b> </h3>
+            <a class="dropdown-item" href="digital_marketing_course.html">Digital Marketing Course</a>
+
+            <a class="dropdown-item" href="data_analysis&visualzation_course.html">Data Analysis &
+                Visualzation Course</a>
+            <a class="dropdown-item" href="accounting_course.html">Accounting Course</a>
+            <a class="dropdown-item" href="taxation_course.html">Taxation Course</a>
+            <a class="dropdown-item" href="graphic_designing_course.html">Graphic Designing Course</a>
+
+            <a class="dropdown-item" href="web_graphic_designing_course.html">Web Graphic Designing
+                Course</a>
+            <a class="dropdown-item" href="management_information_system_course.html">MIS(Management Information) Course</a></li>
+            <a class="dropdown-item" href="information_technology_course.html">Information Technology
+                Programme Course</a>
+            <a class="dropdown-item" href="financial_accounting_course.html">Financial Accounting
+                Course</a>
+        </div>
+
+        <div class="mt-2">
+            <h3>
+              <b>  Contact Us </b>
+            </h3>
+            <p >201, Anant Laxmi Chambers, <br>
+                Dada Patil Marg, opp. <br>
+                Waman Hari Pethe Jewellers, <br>
+                Thane, Maharashtra 400602</p>
+            <span>
+                <a href="mailto: enquiry.thane@quaskills.com?.com">
+                    <img src="images/mail.png" class="mail" alt=""> enquiry.thane@quaskills.com </a>
+            </span>  <br> <br>
+            <span>
+                <a href="wtai://wp/mc;8976988791">
+                    <img src="images/call.png" class="call" alt="">
+                    Tel: +91 89769 88791 </a>
+            </span>
+        </div>
+
+        <div class="mt-2">
+            <h3> <b> Services </b> </h3>
+            <a href="corporate_training.html">Co-orporate Training</a> <br>
+            <a href="digital_marketing_service.html">Digital Marketing Service</a> <br>
+            <a href="placement.html">Placement </a> <br>
+            <a href="seminar.html">College Seminar </a>
+        
+        <div class="d-flex align-items-center justify-content-center mt-2">
+            <a href="https://www.facebook.com/quaskills.official" target="_blank"> <button type="button" class="btn"
+                    data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook">
+                    <i class="fa fa-facebook-official Socials" style="font-size:30px; color: white;"></i>
+                </button> </a> <br>
+            <a href="https://www.instagram.com/quaskills.official/" target="_blank"> <button type="button"
+                    class="btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Instagram">
+                    <i class="fa fa-instagram Socials" style="font-size:30px; color: white;"></i>
+                </button> </a> <br>
+            <a href="https://www.youtube.com/@quastech1821"> <button type="button" class="btn"
+                    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Youtube">
+                    <i class="fa fa-youtube-play Socials" style="font-size:30px; color: white;"></i>
+                </button> </a> <br>
+            <a href="https://twitter.com/quaskills" target="_blank"> <button type="button" class="btn"
+                    data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter">
+                    <i class="fa fa-twitter-square Socials" style="font-size:30px; color: white;"></i>
+                </button> </a>
+        </div>
+    </div>
+    </div>
+    
+    <span class=" mx-auto text-center d-block pb-3"> © 2018 QUASKILLS. All rights reserved </span> 
+</footer>
+
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/63809f12b0d6371309d10e80/1gin6qop9';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+
+
+  <script>
+    function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
+    }
+
+    window.addEventListener("scroll", reveal);
+  </script>
+
+
+  <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+  <script language="javascript" type="text/javascript">
+
+$("#name").bind('input', function () {
+            if (checkExists($('#name').val()) === true) {
+                var url = "";
+                var text = $('#name').val();
+                switch (text) {
+                    case "About Us":
+                        url = 'About.html';
+                        break;
+                    case "Contact":
+                        url = 'contact.html';
+                        break;
+                    case "Blog":
+                        url = 'blog.html';
+                        break;
+                    case "Testimonals":
+                        url = "testimonals.html";
+                        break;
+                    case "digital Marketing course":
+                        url = 'digital_marketing_course.html';
+                        break;
+                    case "DataAnalysis&VisualizationCourse":
+                        url = 'data_analysis&visualzation_course.html';
+                        break;
+                    case "Accounting Course":
+                        url = 'accounting_course.html';
+                        break;
+                    case "Taxation Course":
+                        url = 'taxation_course.html';
+                        break;
+                    case "Graphic Designing course":
+                        url = 'graphic_designing_course.html';
+                        break;
+                    case "Web Graphic Designing course":
+                        url = 'web_graphic_designing_course.html';
+                        break;
+                    case "Management Information System course":
+                        url = 'management_information_system_course.html';
+                        break;
+                    case "Information Technology course":
+                        url = 'information_technology_course.html';
+                        break;
+                    case "Financial Accounting course":
+                        url = 'financial_accounting_course.html';
+                        break;
+                    case "corporate_training":
+                        url = 'corporate_training.html';
+                        break;
+                    case "digitalmarketing_service":
+                        url = 'digital_marketing_service.html';
+                        break;
+                    default:
+                        url = 'index.html';
+                }
+
+                window.location = url;
+            }
+        });
+
+    function checkExists(inputValue) {
+      console.log(inputValue);
+
+      var x = document.getElementById("browsers");
+      var i;
+      var flag;
+      for (i = 0; i < x.options.length; i++) {
+        if (inputValue == x.options[i].value) {
+          flag = true;
+        }
+      }
+      return flag;
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+      window.addEventListener('scroll', function () {
+        if (window.scrollY > 50) {
+          document.getElementById('navbar_top').classList.add('fixed-top');
+          // add padding top to show content behind navbar
+          navbar_height = document.querySelector('.navbar').offsetHeight;
+          document.body.style.paddingTop = navbar_height + 'px';
+        } else {
+          document.getElementById('navbar_top').classList.remove('fixed-top');
+          // remove padding top from body
+          document.body.style.paddingTop = '0';
+        }
+      });
+    }); 
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+body{
+    margin: 0px;
+    padding: 0px;
+	font-family: "popins";
+}
+
+footer .dropdown-item:hover{
+	color: rgb(0, 225, 255);
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: "Roboto";
+}
+
+#mySidenav a {
+	overflow: hidden;
+    white-space: nowrap;
+	position: fixed;
+	right: -62px;
+	transition: 0.3s;
+	padding: 5px;
+	width: 100px;
+	text-decoration: none;
+	font-size: 16px;
+	color: white;
+	border-radius: 20px;
+	z-index: 1;
+  }
+
+  #mySidenav a:hover {
+	width:200px;
+  }
+  
+  #about {
+	top: 170px;
+	background-color: #04AA6D;
+  }
+
+  #blog {
+	top: 220px;
+	background-color: #2196F3;
+  }
+  
+  #projects {
+	top: 270px;
+	background-color: #ca672d;
+  }
+
+  .whatsapp{
+	max-width: 30px;
+	border-radius: 10px;
+  }
+
+  .call{
+	max-width: 30px;
+  }
+
+  .mail{
+	max-width: 30px;
+	border-radius: 10px;
+  }
+  #section2 p ,#section2 ul ,#section2 li{
+	font-size: 20px;
+  }
